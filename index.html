@@ -3,177 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="meta.title">AI Learning Lab | Practical AI Implementation</title>
+    <title>Under Construction</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.cdnjs.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="gradient-bg min-h-screen">
-    <nav class="fixed top-0 right-0 p-4">
-        <button id="langToggle" class="bg-transparent border border-[#219ebc] text-[#219ebc] px-4 py-2 rounded hover:bg-[#219ebc] hover:text-white transition-colors">
-            EN | NL
-        </button>
-    </nav>
-
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
-        <div class="logo-container mb-8">
-            <svg viewBox="0 0 200 100" class="w-full">
-                <circle cx="70" cy="50" r="35" fill="none" stroke="#219ebc" stroke-width="3"/>
-                <circle cx="130" cy="50" r="35" fill="none" stroke="#2a9d8f" stroke-width="3"/>
-                <line x1="35" y1="50" x2="165" y2="50" stroke="#264653" stroke-width="2" stroke-dasharray="4 4"/>
-                <circle cx="70" cy="50" r="4" fill="#219ebc"/>
-                <circle cx="130" cy="50" r="4" fill="#2a9d8f"/>
-                <circle cx="100" cy="50" r="4" fill="#264653"/>
-            </svg>
+<body class="gradient-bg min-h-screen flex items-center justify-center">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold mb-8">🚧 Under Construction 🚧</h1>
+        
+        <div class="max-w-2xl mx-auto bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg mb-8">
+            <div id="quote-container" class="mb-6">
+                <p id="quote-text" class="text-xl italic mb-2"></p>
+                <p id="quote-author" class="text-lg text-gray-300"></p>
+            </div>
+            
+            <a href="description.html" class="inline-block bg-[#219ebc] text-white px-6 py-3 rounded-lg hover:bg-[#2a9d8f] transition-colors">
+                View Full Description
+            </a>
         </div>
-
-        <h1 class="text-4xl font-bold text-center mb-4" data-i18n="header.title"></h1>
-        <p class="text-xl text-center mb-12 text-gray-400" data-i18n="header.subtitle">Where Practice Meets Innovation</p>
-
-        <div class="card p-6 rounded-lg mb-12">
-            <p class="text-lg mb-6" data-i18n="intro.description"></p>
-        </div>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6" data-i18n="approach.title"></h2>
-            <div class="card p-6 rounded-lg">
-                <p class="mb-4" data-i18n="approach.description1"></p>
-                <p data-i18n="approach.description2"></p>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6" data-i18n="workshop.title"></h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4" data-i18n="workshop.format.title"></h3>
-                    <ul class="space-y-2">
-                        <li data-i18n="workshop.format.items.0"></li>
-                        <li data-i18n="workshop.format.items.1"></li>
-                        <li data-i18n="workshop.format.items.2"></li>
-                    </ul>
-                </div>
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4" data-i18n="workshop.participation.title"></h3>
-                    <ul class="space-y-2">
-                        <li data-i18n="workshop.participation.items.0"></li>
-                        <li data-i18n="workshop.participation.items.2"></li>
-                        <li data-i18n="workshop.participation.items.3"></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6" data-i18n="journey.title"></h2>
-            <div class="flex flex-col space-y-6">
-                <div class="card p-6 rounded-lg">
-                    <h3 data-i18n="journey.before.title" class="text-xl font-semibold mb-4">
-                        <i class="fas fa-clipboard-list text-[#219ebc] mr-2"></i>
-                    </h3>
-                    <p data-i18n="journey.before.description"></p>
-                </div>
-                <div class="card p-6 rounded-lg">
-                    <h3 data-i18n="journey.during.title" class="text-xl font-semibold mb-4">
-                        <i class="fas fa-users text-[#219ebc] mr-2"></i>
-                    </h3>
-                    <p data-i18n="journey.during.description"></p>
-                </div>
-                <div class="card p-6 rounded-lg">
-                    <h3 data-i18n="journey.after.title" class="text-xl font-semibold mb-4">
-                        <i class="fas fa-network-wired text-[#219ebc] mr-2"></i>
-                    </h3>
-                    <p data-i18n="journey.after.description"></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6" data-i18n="achievements.title"></h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4" data-i18n="achievements.opportunities.title"></h3>
-                    <p data-i18n="achievements.opportunities.description"></p>
-                </div>
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4" data-i18n="achievements.implementation.title"></h3>
-                    <p data-i18n="achievements.implementation.description"></p>
-                </div>
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4" data-i18n="achievements.people.title"></h3>
-                    <p data-i18n="achievements.people.description"></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 data-i18n="whoShouldJoin.title" class="text-2xl font-bold mb-6"></h2>
-            <div class="card p-6 rounded-lg">
-                <p data-i18n="whoShouldJoin.intro" class="mb-4"></p>
-                <ul class="space-y-2">
-                    <li data-i18n="whoShouldJoin.items.0"></li>
-                    <li data-i18n="whoShouldJoin.items.1"></li>
-                    <li data-i18n="whoShouldJoin.items.2"></li>
-                    <li data-i18n="whoShouldJoin.items.3"></li>
-                    <li data-i18n="whoShouldJoin.items.4"></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6" data-i18n="facilitators.title"></h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4" data-i18n="facilitators.sytze.name"></h3>
-                    <p data-i18n="facilitators.sytze.bio"></p>
-                </div>
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4" data-i18n="facilitators.kamiel.name"></h3>
-                    <p data-i18n="facilitators.kamiel.bio"></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="text-center mb-12">
-            <h2 class="text-2xl font-bold mb-6" data-i18n="cta.title"></h2>
-            <div class="card p-6 rounded-lg">
-                <p class="mb-4" data-i18n="cta.timing"></p>
-                <p class="mb-6" data-i18n="cta.limit"></p>
-                <a href="show-interest-page.html" class="inline-block bg-[#219ebc] text-white px-10 py-4 rounded-lg hover:bg-[#2a9d8f] transition-colors cta-button" data-i18n="cta.button"></a>
-            </div>
-        </section>
-
     </div>
 
-    <script src="translations-ai-learning-lab.js"></script>
+    <script src="quotes.js"></script>
     <script>
-        let currentLang = 'en';
-
-        function updateContent() {
-            document.documentElement.lang = currentLang;
-            document.querySelectorAll('[data-i18n]').forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                const keys = key.split('.');
-                let value = translations[currentLang];
-                for (const k of keys) {
-                    value = value[k];
-                }
-                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                    element.placeholder = value;
-                } else {
-                    element.innerHTML = value;
-                }
-            });
+        function displayQuote() {
+            const quote = getRandomQuote();
+            document.getElementById('quote-text').textContent = `"${quote.text}"`;
+            document.getElementById('quote-author').textContent = `- ${quote.author}`;
         }
-
-        document.getElementById('langToggle').addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'nl' : 'en';
-            updateContent();
-        });
-
-        // Initialize content
-        document.addEventListener('DOMContentLoaded', updateContent);
+        
+        // Display quote when page loads
+        displayQuote();
     </script>
 </body>
 </html>
