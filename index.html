@@ -1,1 +1,66 @@
-Big plans await...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .quote-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .quote-text {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .quote-author {
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚧 Under Construction 🚧</h1>
+        <div class="quote-box">
+            <p class="quote-text" id="quote-text"></p>
+            <p class="quote-author" id="quote-author"></p>
+        </div>
+    </div>
+
+    <script src="quotes.js"></script>
+    <script>
+        function displayQuote() {
+            const quote = getRandomQuote();
+            document.getElementById('quote-text').textContent = `"${quote.text}"`;
+            document.getElementById('quote-author').textContent = `- ${quote.author}`;
+        }
+        
+        // Display quote when page loads
+        displayQuote();
+    </script>
+</body>
+</html>
