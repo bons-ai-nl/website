@@ -1,0 +1,70 @@
+:root {
+    --background-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --primary-color: #219ebc;
+    --secondary-color: #023047;
+    --hover-color: #8ecae6;
+}
+
+body {
+    font-family: 'Ubuntu', 'Space Grotesk', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Add bullet points styling */
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.gradient-bg {
+    background: linear-gradient(120deg, #1a1a1a, #1f2937);
+}
+
+.card {
+    background: rgba(31, 41, 55, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(142, 202, 230, 0.1);
+}
+
+.logo-container {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form select {
+    background: rgba(31, 41, 55, 0.7);
+    border: 1px solid rgba(142, 202, 230, 0.2);
+    color: #e0e0e0;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus, 
+.contact-form select:focus {
+    border-color: #219ebc;
+    outline: none;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.cta-button {
+    animation: pulse 2s infinite;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(33, 158, 188, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(33, 158, 188, 0.4);
+}
