@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="meta.title">AI Learning Lab | Practical AI Implementation</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body class="gradient-bg min-h-screen">
-    <header class="header-nav fixed w-full top-0 z-50 bg-white">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="w-40">
-                    <svg viewBox="0 0 200 100" class="w-full">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="logo-container me-3">
+                    <svg viewBox="0 0 200 100" class="w-100">
                         <circle cx="70" cy="50" r="35" fill="none" stroke="#219ebc" stroke-width="3"/>
                         <circle cx="130" cy="50" r="35" fill="none" stroke="#2a9d8f" stroke-width="3"/>
                         <line x1="35" y1="50" x2="165" y2="50" stroke="#264653" stroke-width="2" stroke-dasharray="4 4"/>
@@ -22,15 +22,20 @@
                         <circle cx="100" cy="50" r="4" fill="#264653"/>
                     </svg>
                 </div>
-                <span class="text-xl font-bold ml-4 text-[#219ebc]">AI Learning Lab</span>
+                <span class="fs-4 fw-bold text-primary">AI Learning Lab</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button id="langToggle" class="btn btn-outline-primary">EN | NL</button>
+                    </li>
+                </ul>
             </div>
-            <nav class="flex items-center space-x-6">
-                <button id="langToggle" class="bg-transparent border border-[#219ebc] text-[#219ebc] px-4 py-2 rounded hover:bg-[#219ebc] hover:text-white transition-colors">
-                    EN | NL
-                </button>
-            </nav>
         </div>
-    </header>
+    </nav>
 
     <div class="container mx-auto px-4 py-8 max-w-4xl">
         <div class="logo-container mb-8">
@@ -217,6 +222,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="translations-ai-learning-lab.js"></script>
     <script>
         let currentLang = 'en';

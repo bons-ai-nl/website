@@ -111,8 +111,12 @@ ul {
     box-shadow: 0 0 0 2px rgba(33, 158, 188, 0.2);
 }
 
-.header-nav {
+.navbar {
     border-bottom: 1px solid rgba(142, 202, 230, 0.1);
+}
+
+.logo-container {
+    width: 40px;
 }
 
 .footer {
