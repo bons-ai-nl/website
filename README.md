@@ -1,2 +1,1 @@
-# ai-learning-lab.github.io
-Website for AI Learning Lab
+# Website for AI Learning Lab
