@@ -10,11 +10,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="gradient-bg min-h-screen">
-    <nav class="fixed top-0 right-0 p-4">
-        <button id="langToggle" class="bg-transparent border border-[#219ebc] text-[#219ebc] px-4 py-2 rounded hover:bg-[#219ebc] hover:text-white transition-colors">
-            EN | NL
-        </button>
-    </nav>
+    <header class="header-nav fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-40">
+                    <svg viewBox="0 0 200 100" class="w-full">
+                        <circle cx="70" cy="50" r="35" fill="none" stroke="#219ebc" stroke-width="3"/>
+                        <circle cx="130" cy="50" r="35" fill="none" stroke="#2a9d8f" stroke-width="3"/>
+                        <line x1="35" y1="50" x2="165" y2="50" stroke="#264653" stroke-width="2" stroke-dasharray="4 4"/>
+                        <circle cx="70" cy="50" r="4" fill="#219ebc"/>
+                        <circle cx="130" cy="50" r="4" fill="#2a9d8f"/>
+                        <circle cx="100" cy="50" r="4" fill="#264653"/>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold ml-4 text-[#219ebc]">AI Learning Lab</span>
+            </div>
+            <nav class="flex items-center space-x-6">
+                <button id="langToggle" class="bg-transparent border border-[#219ebc] text-[#219ebc] px-4 py-2 rounded hover:bg-[#219ebc] hover:text-white transition-colors">
+                    EN | NL
+                </button>
+            </nav>
+        </div>
+    </header>
 
     <div class="container mx-auto px-4 py-8 max-w-4xl">
         <div class="logo-container mb-8">
@@ -144,7 +161,62 @@
             </div>
         </section>
 
+        <section id="contact" class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 section-title">Contact Us</h2>
+            <div class="card p-6 rounded-lg">
+                <form class="contact-form space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-2 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full px-4 py-2 rounded-lg"></textarea>
+                    </div>
+                    <button type="submit" 
+                        class="w-full bg-[#219ebc] text-white px-6 py-3 rounded-lg hover:bg-[#2a9d8f] transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
     </div>
+
+    <footer class="footer py-8 mt-12">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">AI Learning Lab</h3>
+                    <p class="text-gray-400">Empowering organizations with responsible AI implementation</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-400">info@ailearninglab.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-[#219ebc] hover:text-[#8ecae6]">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-[#219ebc] hover:text-[#8ecae6]">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2025 AI Learning Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="translations-ai-learning-lab.js"></script>
     <script>

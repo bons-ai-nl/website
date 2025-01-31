@@ -4,6 +4,8 @@
     --primary-color: #219ebc;
     --secondary-color: #023047;
     --hover-color: #8ecae6;
+    --accent-color: #2a9d8f;
+    --footer-bg: #141414;
 }
 
 body {
@@ -45,8 +47,42 @@ ul {
 .contact-form input:focus, 
 .contact-form textarea:focus, 
 .contact-form select:focus {
-    border-color: #219ebc;
+    border-color: var(--primary-color);
     outline: none;
+    box-shadow: 0 0 0 2px rgba(33, 158, 188, 0.2);
+}
+
+.header-nav {
+    backdrop-filter: blur(10px);
+    background: rgba(26, 26, 26, 0.8);
+    border-bottom: 1px solid rgba(142, 202, 230, 0.1);
+}
+
+.footer {
+    background-color: var(--footer-bg);
+    border-top: 1px solid rgba(142, 202, 230, 0.1);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
 }
 @keyframes pulse {
     0% { transform: scale(1); }
