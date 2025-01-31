@@ -1,10 +1,10 @@
 :root {
-    --background-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --primary-color: #219ebc;
-    --secondary-color: #023047;
+    --background-color: #FFE9D3;
+    --text-color: #242424;
+    --primary-color: #658EA9;
+    --secondary-color: #88B2CC;
     --hover-color: #8ecae6;
-    --accent-color: #2a9d8f;
+    --accent-color: #E98973;
     --footer-bg: #141414;
 }
 
@@ -19,10 +19,6 @@ body {
 ul {
     list-style-type: disc;
     padding-left: 1.5rem;
-}
-
-.gradient-bg {
-    background: linear-gradient(120deg, #1a1a1a, #1f2937);
 }
 
 .card {
@@ -53,8 +49,6 @@ ul {
 }
 
 .header-nav {
-    backdrop-filter: blur(10px);
-    background: rgba(26, 26, 26, 0.8);
     border-bottom: 1px solid rgba(142, 202, 230, 0.1);
 }
 
