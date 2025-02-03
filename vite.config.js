@@ -21,6 +21,12 @@ export default defineConfig({
       scss: {
         additionalData: `@import "bootstrap/scss/bootstrap";`
       }
+    },
+    postcss: {
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
     }
   }
 })
