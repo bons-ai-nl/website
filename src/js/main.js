@@ -1,8 +1,7 @@
-// Import Bootstrap CSS and JS
-import 'bootstrap/dist/css/bootstrap.min.css'
+// Import Bootstrap JS only (CSS is handled in styles.css)
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
-// Import Tailwind CSS
+// Import our styles
 import '../css/styles.css'
 
 // Import translations
