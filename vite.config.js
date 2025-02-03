@@ -5,6 +5,13 @@ export default defineConfig({
     outDir: 'build',
     emptyOutDir: true,
   },
-  publicDir: 'src',
-  root: '.',
+  server: {
+    port: 3000,
+    open: true
+  },
+  resolve: {
+    alias: {
+      '~bootstrap': 'bootstrap',
+    }
+  }
 })
