@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import path from 'path'
 
 export default defineConfig({
   build: {
@@ -11,7 +12,15 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '~bootstrap': 'bootstrap',
+      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+      '@': path.resolve(__dirname, 'src')
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "bootstrap/scss/bootstrap";`
+      }
     }
   }
 })
