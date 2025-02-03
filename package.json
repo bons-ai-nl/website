@@ -11,12 +11,10 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
-    "sass": "^1.71.0",
     "tailwindcss": "^3.4.1",
     "vite": "^6.0.11"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3"
+    "alpinejs": "^3.13.5"
   }
 }

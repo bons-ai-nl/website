@@ -1,6 +1,3 @@
-/* Import Bootstrap first so we can override it */
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
 /* Import Tailwind */
 @tailwind base;
 @tailwind components;

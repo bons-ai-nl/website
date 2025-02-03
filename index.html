@@ -11,28 +11,45 @@
 </head>
 
 <body class="gradient-bg min-h-screen">
-    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
-        <div class="container-fluid max-w-7xl mx-auto px-4">
-            <a class="navbar-brand text-2xl font-bold" href="/">
-                AI Learning Lab
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#what-we-do">What We Do</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ai-for-org">What Can AI Do For Your Organization</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+    <nav class="bg-white/10 backdrop-blur-md border-b border-white/10" x-data="{ isOpen: false }">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <a class="flex items-center text-2xl font-bold" href="/">
+                        AI Learning Lab
+                    </a>
+                </div>
                 
+                <!-- Mobile menu button -->
+                <div class="flex items-center -mr-2 sm:hidden">
+                    <button @click="isOpen = !isOpen" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" x-show="!isOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg class="h-6 w-6" x-show="isOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop menu -->
+                <div class="hidden sm:flex sm:items-center sm:ml-6">
+                    <div class="flex space-x-4">
+                        <a href="#what-we-do" class="px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-gray-700">What We Do</a>
+                        <a href="#ai-for-org" class="px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-gray-700">What Can AI Do For Your Organization</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-gray-700">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div x-show="isOpen" class="sm:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#what-we-do" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">What We Do</a>
+                    <a href="#ai-for-org" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">What Can AI Do For Your Organization</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
