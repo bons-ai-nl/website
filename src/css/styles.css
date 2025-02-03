@@ -87,6 +87,9 @@ body {
     color: var(--text-color);
 }
 
+nav {
+}
+
 /* Add bullet points styling */
 ul {
     list-style-type: disc;
