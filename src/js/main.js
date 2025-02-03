@@ -1,17 +1,33 @@
 // Import Bootstrap CSS and JS
 import 'bootstrap/dist/css/bootstrap.min.css'
-import * as bootstrap from 'bootstrap'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
-// Initialize Bootstrap's JavaScript features
-window.bootstrap = bootstrap
+// Import Tailwind CSS
+import '../css/styles.css'
 
-// Initialize any Bootstrap components that need JavaScript
-document.addEventListener('DOMContentLoaded', () => {
-  // Enable all tooltips
-  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  tooltipTriggerList.map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+let currentLang = 'en';
 
-  // Enable all popovers
-  const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  popoverTriggerList.map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-})
+function updateContent() {
+    document.documentElement.lang = currentLang;
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = translations[currentLang];
+        for (const k of keys) {
+            value = value[k];
+        }
+        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+            element.placeholder = value;
+        } else {
+            element.innerHTML = value;
+        }
+    });
+}
+
+document.getElementById('langToggle').addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'nl' : 'en';
+    updateContent();
+});
+
+// Initialize content
+document.addEventListener('DOMContentLoaded', updateContent);
