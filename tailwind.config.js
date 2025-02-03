@@ -8,9 +8,5 @@ export default {
     extend: {},
   },
   plugins: [],
-  safelist: [
-    {
-      pattern: /h-\[.*\]/,
-    }
-  ]
+  safelist: [ ]
 }

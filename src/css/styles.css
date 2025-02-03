@@ -89,7 +89,7 @@ body {
 
 /* Override Bootstrap's default link colors */
 a {
-    color: var(--primary-color);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }

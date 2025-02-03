@@ -1,4 +1,4 @@
-export const translations = {
+export default {
     "meta": {
         "title": "AI Learning Lab | Practical AI Implementation"
     },
