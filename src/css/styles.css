@@ -87,6 +87,18 @@ body {
     color: var(--text-color);
 }
 
+/* Override Bootstrap's default link colors */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
 nav {
 }
 
