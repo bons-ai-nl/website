@@ -4,23 +4,6 @@ import * as bootstrap from 'bootstrap'
 // Import our styles
 import '../css/styles.css'
 
-// Initialize all Bootstrap components
-document.addEventListener('DOMContentLoaded', () => {
-    // Enable navbar toggler
-    const navbarToggler = document.querySelector('.navbar-toggler');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    
-    if (navbarToggler && navbarCollapse) {
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-            toggle: false
-        });
-        
-        navbarToggler.addEventListener('click', (e) => {
-            e.preventDefault();
-            bsCollapse.toggle();
-        });
-    }
-
 // Import translations
 import enTranslations from '../lang/en.js'
 import nlTranslations from '../lang/nl.js'
@@ -64,6 +47,21 @@ function updateContent() {
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize content
     updateContent();
+    
+    // Enable navbar toggler
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    if (navbarToggler && navbarCollapse) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+        });
+        
+        navbarToggler.addEventListener('click', (e) => {
+            e.preventDefault();
+            bsCollapse.toggle();
+        });
+    }
     
     // Set up language toggle
     const langToggle = document.getElementById('langToggle');
