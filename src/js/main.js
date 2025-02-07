@@ -2,30 +2,38 @@
 import Alpine from 'alpinejs'
 
 // Shape morphing configuration
-const shapeConfigs = [
+const shape1Configs = [
     {
-        // Blobby circle
         fill: "#048A81",
         d: "M160,50 C240,50 300,90 300,177 C300,264 240,304 160,304 C80,304 20,264 20,177 C20,90 80,50 160,50"
     },
     {
-        // Triangular shape
         fill: "#2D3047",
         d: "M160,50 C260,50 280,90 160,177 C40,264 60,304 160,304 C260,304 280,264 160,177 C40,90 60,50 160,50"
     },
     {
-        // Person silhouette
-        fill: "#FF3864",
-        d: "M160,50 C200,50 220,90 220,127 C220,164 180,184 160,184 C140,184 100,164 100,127 C100,90 120,50 160,50"
-    },
-    {
-        // Star-like shape
         fill: "#048A81",
         d: "M160,50 C260,90 220,140 300,177 C220,214 260,264 160,304 C60,264 100,214 20,177 C100,140 60,90 160,50"
     }
 ];
 
-let currentShapeIndex = 0;
+const shape2Configs = [
+    {
+        fill: "#FF3864",
+        d: "M160,50 C200,50 220,90 220,127 C220,164 180,184 160,184 C140,184 100,164 100,127 C100,90 120,50 160,50"
+    },
+    {
+        fill: "#FF3864",
+        d: "M160,50 C260,90 220,140 300,177 C220,214 260,264 160,304 C60,264 100,214 20,177 C100,140 60,90 160,50"
+    },
+    {
+        fill: "#2D3047",
+        d: "M160,50 C260,50 280,90 160,177 C40,264 60,304 160,304 C260,304 280,264 160,177 C40,90 60,50 160,50"
+    }
+];
+
+let currentShape1Index = 0;
+let currentShape2Index = 0;
 
 // Import our styles
 import '../css/styles.css'
@@ -79,13 +87,22 @@ document.addEventListener('DOMContentLoaded', () => {
     updateContent();
     
     // Initialize shape morphing
-    const morphingShape = document.getElementById('morphing-shape');
-    if (morphingShape) {
+    const morphingShape1 = document.getElementById('morphing-shape-1');
+    const morphingShape2 = document.getElementById('morphing-shape-2');
+    
+    if (morphingShape1 && morphingShape2) {
         setInterval(() => {
-            currentShapeIndex = (currentShapeIndex + 1) % shapeConfigs.length;
-            const newConfig = shapeConfigs[currentShapeIndex];
-            morphingShape.setAttribute('fill', newConfig.fill);
-            morphingShape.setAttribute('d', newConfig.d);
+            currentShape1Index = (currentShape1Index + 1) % shape1Configs.length;
+            currentShape2Index = (currentShape2Index + 1) % shape2Configs.length;
+            
+            const newConfig1 = shape1Configs[currentShape1Index];
+            const newConfig2 = shape2Configs[currentShape2Index];
+            
+            morphingShape1.setAttribute('fill', newConfig1.fill);
+            morphingShape1.setAttribute('d', newConfig1.d);
+            
+            morphingShape2.setAttribute('fill', newConfig2.fill);
+            morphingShape2.setAttribute('d', newConfig2.d);
         }, 3000);
     }
     
