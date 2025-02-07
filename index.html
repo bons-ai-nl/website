@@ -11,18 +11,18 @@
 </head>
 
 <body class="gradient-bg min-h-screen">
-    <nav class="bg-white/10 backdrop-blur-md border-b border-white/10" x-data="{ isOpen: false }">
-        <div class="max-w-7xl mx-auto px-4">
+    <nav class="bg-white border-b border-white/10 fixed top-0 w-full z-50" x-data="{ isOpen: false }">
+        <div class="max-w-[1500px] mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <a class="flex items-center text-2xl font-bold" href="/">
-                        AI Learning Lab
+                        <h2>AI Learning Lab</h2>
                     </a>
                 </div>
                 
                 <!-- Mobile menu button -->
                 <div class="flex items-center -mr-2 sm:hidden">
-                    <button @click="isOpen = !isOpen" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <button @click="isOpen = !isOpen" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400  hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <span class="sr-only">Open main menu</span>
                         <svg class="h-6 w-6" x-show="!isOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -34,11 +34,10 @@
                 </div>
                 
                 <!-- Desktop menu -->
-                <div class="hidden sm:flex sm:items-center sm:ml-6">
+                <div class="hidden sm:flex sm:items-center sm:ml-6 ">
                     <div class="flex space-x-4">
-                        <a href="#what-we-do" class="px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-gray-700">What We Do</a>
-                        <a href="#ai-for-org" class="px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-gray-700">What Can AI Do For Your Organization</a>
-                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-gray-700">Contact</a>
+                        <a href="#what-we-do" class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700 hover:border-1">What We Do</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700 hover:border">Contact</a>
                     </div>
                 </div>
             </div>
@@ -47,28 +46,24 @@
             <div x-show="isOpen" class="sm:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="#what-we-do" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">What We Do</a>
-                    <a href="#ai-for-org" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">What Can AI Do For Your Organization</a>
                     <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-20 mx-auto px-4 py-8 max-w-4xl">
-        <div class="logo-container mb-8">
-            <svg viewBox="0 0 200 100" class="w-full">
-                <circle cx="70" cy="50" r="35" fill="none" stroke="#219ebc" stroke-width="3" />
-                <circle cx="130" cy="50" r="35" fill="none" stroke="#2a9d8f" stroke-width="3" />
-                <line x1="35" y1="50" x2="165" y2="50" stroke="#264653" stroke-width="2" stroke-dasharray="4 4" />
-                <circle cx="70" cy="50" r="4" fill="#219ebc" />
-                <circle cx="130" cy="50" r="4" fill="#2a9d8f" />
-                <circle cx="100" cy="50" r="4" fill="#264653" />
-            </svg>
-        </div>
+    <div class="container mt-20 mx-auto px-4 py-8 max-w-[1500px]">
 
-        <h1 class="text-4xl font-bold text-center mb-4" data-i18n="header.title"></h1>
-        <p class="text-xl text-center mb-12 text-gray-400" data-i18n="header.subtitle">Where Practice Meets Innovation
-        </p>
+        <div id="section-title" class="w-full mt-20">
+            <div class="bg-[var(--background-color-2)] p-16 rounded-3xl mb-12 flex">
+                <div class="w-2/3">
+                    <h1 class="font-bold mb-4 text-left" data-i18n="header.title"></h1>
+                </div>
+                <div class="w-1/3">
+                    
+                </div>
+            </div>
+        </div>
 
         <div class="card p-6 rounded-lg mb-12">
             <p class="text-lg mb-6" data-i18n="intro.description"></p>

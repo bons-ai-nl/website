@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
 /* Import Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* Custom fonts */
 @font-face {
@@ -70,10 +73,11 @@
 :root {
     --background-color: #FFE9D3;
     --text-color: #242424;
-    --primary-color: #658EA9;
-    --secondary-color: #88B2CC;
-    --hover-color: #8ecae6;
-    --accent-color: #E98973;
+    --background-color-2: #FBCFAF;
+    --primary-color: #2D3047;
+    --secondary-color: #048A81;
+    --accent-color: #FF3864;
+    --hover-color: #242424;
     --footer-bg: #141414;
 }
 
@@ -83,6 +87,16 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Young Serif', 'Ubuntu', 'Space Grotesk', sans-serif;
+    font-weight: 800;
+}
+
+h1 {
+    @apply text-7xl;
+}
+
 
 /* Override Bootstrap's default link colors */
 a {
@@ -107,7 +121,6 @@ ul {
 
 .card {
     background: rgba(31, 41, 55, 0.5);
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(142, 202, 230, 0.1);
 }
 
