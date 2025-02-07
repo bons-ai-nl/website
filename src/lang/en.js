@@ -3,7 +3,7 @@ export default {
         "title": "AI Learning Lab | Practical AI Implementation"
     },
     "header": {
-        "title": "AI Learning Lab",
+        "title": "Onderzoek samen met ons wat AI kan betekenen voor jouw organisatie",
         "subtitle": "Where Practice Meets Innovation"
     },
     "intro": {
