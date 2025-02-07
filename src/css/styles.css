@@ -176,8 +176,8 @@ ul {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
-#section-title svg {
-    animation: float 6s ease-in-out infinite;
+#morphing-shape {
+    transition: all 0.7s ease;
 }
 
 .section-title::after {
