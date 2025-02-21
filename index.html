@@ -11,98 +11,12 @@
 </head>
 
 <body class="gradient-bg min-h-screen">
-    <div class="root-background">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
-            <!-- Main trunk -->
-            <path d="M480,0 C520,0 520,0 520,0
-                     L520,100 
-                     C520,150 500,200 480,250
-                     C460,300 440,350 420,400
-                     C418,405 415,407 410,407
-                     C405,407 402,405 400,400
-                     L400,250
-                     C400,200 420,150 420,100
-                     L420,0
-                     Z">
-                <animate attributeName="opacity" 
-                         from="0" to="1" 
-                         dur="1.5s" 
-                         fill="freeze" />
-            </path>
-            
-            <!-- Left roots -->
-            <path d="M410,407
-                     C400,410 390,420 380,440
-                     C370,460 350,480 320,500
-                     C310,507 300,510 290,507
-                     C280,504 275,497 273,490
-                     C290,470 300,450 305,430
-                     C310,410 320,400 330,395
-                     C340,390 350,390 360,395
-                     C370,400 380,405 390,405
-                     Z">
-                <animate attributeName="opacity" 
-                         from="0" to="1" 
-                         dur="2s" 
-                         fill="freeze" />
-            </path>
-            
-            <!-- Right roots -->
-            <path d="M410,407
-                     C420,410 430,420 440,440
-                     C450,460 470,480 500,500
-                     C510,507 520,510 530,507
-                     C540,504 545,497 547,490
-                     C530,470 520,450 515,430
-                     C510,410 500,400 490,395
-                     C480,390 470,390 460,395
-                     C450,400 440,405 430,405
-                     Z">
-                <animate attributeName="opacity" 
-                         from="0" to="1" 
-                         dur="2s" 
-                         fill="freeze" />
-            </path>
-            
-            <!-- Left sub-roots -->
-            <path d="M290,507
-                     C280,510 270,520 260,540
-                     C250,560 240,580 220,600
-                     C215,605 210,607 205,605
-                     C200,603 198,598 197,593
-                     C210,580 220,560 225,540
-                     C230,520 240,510 250,505
-                     C260,500 270,500 280,503
-                     Z">
-                <animate attributeName="opacity" 
-                         from="0" to="1" 
-                         dur="2.5s" 
-                         fill="freeze" />
-            </path>
-            
-            <!-- Right sub-roots -->
-            <path d="M530,507
-                     C540,510 550,520 560,540
-                     C570,560 580,580 600,600
-                     C605,605 610,607 615,605
-                     C620,603 622,598 623,593
-                     C610,580 600,560 595,540
-                     C590,520 580,510 570,505
-                     C560,500 550,500 540,503
-                     Z">
-                <animate attributeName="opacity" 
-                         from="0" to="1" 
-                         dur="2.5s" 
-                         fill="freeze" />
-            </path>
-        </svg>
-    </div>
     <nav class="bg-white border-b border-white/10 fixed top-0 w-full z-50" x-data="{ isOpen: false }">
         <div class="max-w-[1500px] mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <a class="flex items-center text-2xl font-bold" href="/">
-                        <span class="font-bold" style="font-family: Outfit">Bonsai</span>
+                        <span class="font-bold" style="font-family: Outfit">Bons<span class="text-[var(--secondary-color)]">ai</span></span>
                     </a>
                 </div>
                 
@@ -138,7 +52,24 @@
         </div>
     </nav>
 
-    <div class="container mt-20 mx-auto px-4 py-8 max-w-[1500px]">
+    <div class="container mt-[65px] mx-auto px-4 py-8 max-w-[1500px]">
+        <!-- Background
+        <div class="root-background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <path d="M200 50 L210 100 L200 150" fill="black" stroke="black" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <path d="M200 150 C180 180, 150 220, 100 240" fill="black" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M200 150 C210 190, 220 240, 190 300" fill="black" stroke="black" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M200 150 C220 180, 280 200, 320 220" fill="black" stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <path d="M150 200 C130 220, 110 235, 70 250" fill="black" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M130 220 C120 250, 110 280, 90 310" fill="black" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <path d="M205 230 C200 270, 190 320, 180 350" fill="black" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <path d="M280 200 C300 220, 320 235, 350 245" fill="black" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+        </div> -->
         <!-- Title Section -->
         <div id="section-title" class="w-full mt-20">
             <div class="bg-[var(--background-color-2)] p-16 rounded-3xl mb-12 flex">
