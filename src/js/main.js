@@ -17,7 +17,7 @@ const translations = {
     nl: nlTranslations
 };
 
-let currentLang = 'en';
+let currentLang = 'nl';
 
 function updateContent() {
     document.documentElement.lang = currentLang;

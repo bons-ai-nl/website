@@ -1,27 +1,73 @@
 export default {
     "meta": {
-        "title": "Bonsai | AI, gegrond in waarden"
+        "title": "Bonsai | AI, geworteld in waarden"
     },
     "header": {
-        "title": "AI Learning Lab",
-        "subtitle": "Waar Praktijk Innovatie Ontmoet"
+        "slogan": "AI, geworteld in waarden",
+        "title": "Ontdek de waarde van AI voor jouw organisatie",
     },
-    "intro": {
-        "description": "Anders dan traditionele workshops die zich alleen richten op technische mogelijkheden, helpt ons Learning Lab je bij het ontdekken van praktische, verantwoorde AI-implementaties die voortbouwen op de unieke context en uitdagingen van jouw industrie, bedrijf en team. Je vertrekt met concrete inzichten én een netwerk van vakgenoten om je AI-reis te ondersteunen."
+    "mission": {
+        "title": "Waarom We Bestaan",
+        "mainText": "AI verandert onze wereld in een ongekend tempo. Als organisatie wil je meebewegen, maar niet ten koste van je waarden en visie. Big-tech suggereert dat hun weg de enige weg is - maar er zijn sterke alternatieven en wij geloven dat het anders kan. Bonsai helpt je bij het implementeren van AI-oplossingen waarbij jij aan het roer blijft. Als autonome organisatie kies je voor open oplossingen en neem je zelf verantwoordelijkheid voor de toekomst van AI.",
+        "values": {
+            "title": "Onze Waarden",
+            "openPrivate": {
+                "title": "Open maar Privé",
+                "description": "Wij pleiten voor transparantie terwijl we privacy beschermen"
+            },
+            "autonomous": {
+                "title": "Autonoom",
+                "description": "Onafhankelijk denken leidt tot betere oplossingen"
+            },
+            "responsible": {
+                "title": "Verantwoordelijk",
+                "description": "We geven prioriteit aan ethische overwegingen bij elke beslissing"
+            }
+        }
     },
     "approach": {
         "title": "Onze Aanpak",
-        "description1": "Het AI Learning Lab is een interactieve sessie gebouwd op het principe van wederzijds leren. Wij geloven dat de beste inzichten ontstaan door het combineren van diverse perspectieven en ervaringen.",
-        "description2": "Samen onderzoeken we hoe AI doordacht kan worden geïntegreerd in jouw organisatie, rekening houdend met bredere maatschappelijke impact en ethische implicaties."
+        "labDescription": "We werken volgens het \"Lab\"-format, waarin we een wederzijds leren. Er bestaat geen 'one-size-fits-all'-oplossing. Met een gestructureerde aanpak verkennen we samen de kansen en uitdagingen op gebied van AI binnen jouw organisatie.",
+        "modules": {
+            "title": "Modules",
+            "learningGoals": "Leerdoelen",
+            "selfHosting": {
+                "title": "Self-hosting AI",
+                "description": "Als organisatie wil je niet afhankelijk zijn van big-tech. Peperdure licenties, en vendor lock-in maken het moeilijk om later nog van koers te veranderen. Gelukkig zijn er alternatieven die niet onderdoen en vaak beter zijn dan de gevestigde namen. Open-source AI-applicaties bieden dezelfde mogelijkheden, maar dan met behoud van je autonomie.",
+                "learningGoal1": "Het 'lokaal' draaien van AI-oplossingen",
+                "learningGoal2": "Welke open-source alternatieven er zijn voor populaire AI-tools",
+                "learningGoal3": "De voor- en nadelen van verschillende hostingopties"
+            },
+            "promptTraining": {
+                "title": "Prompt training",
+                "description": "Effectief communiceren met AI-systemen is een cruciale vaardigheid geworden. Prompting - het formuleren van jouw intenties - bepaalt de kwaliteit van je resultaten. Of je nu content creëert, data analyseert of beelden genereert, de juiste prompt maakt het verschil tussen bruikbare output en troep.",
+                "learningGoal1": "Leer je de basisprincipes van effectief prompting",
+                "learningGoal2": "Oefen je met het schrijven en verfijnen van prompts",
+            },
+            "ethics": {
+                "title": "Ethiek & AI",
+                "description": "De integratie van AI in organisaties brengt nieuwe morele vraagstukken met zich mee. Deze module vertaalt grote ethische thema's naar praktische dilemma's waar jouw organisatie mee te maken krijgt.",
+                "learningGoal1": "Privacy & surveillance: Waar ligt de grens tussen efficiëntie en privacy?",
+                "learningGoal2": "Bias en discriminatie: Hoe voorkom je dat AI bestaande vooroordelen versterkt?",
+                "learningGoal3": "Menselijke controle: Wanneer laat je AI zelfstandig beslissingen nemen?"
+            }
+        }
+    },
+    "team": {
+        "title": "Wie We Zijn",
+        "description": "Wij zijn technologen met een hart voor de samenleving, die verantwoordelijkheid nemen voor het vormgeven van de toekomst van AI. Onze expertise wordt alleen geëvenaard door onze toewijding aan ethische innovatie."
+    },
+    "intro": {
+        "description": "In tegenstelling tot traditionele workshops die zich alleen richten op technische mogelijkheden, helpt ons Learning Lab je praktische, verantwoorde AI-implementaties te ontdekken, terwijl je voortbouwt op de unieke context en uitdagingen van jouw industrie, bedrijf en team. Je vertrekt met zowel bruikbare inzichten als een netwerk van collega's om je AI-reis te ondersteunen."
     },
     "workshop": {
         "title": "Workshop Details",
         "format": {
-            "title": "Format",
+            "title": "Formaat",
             "items": [
-                "Halfdaagse interactieve sessie (4 uur)",
-                "Uitgevoerd op locatie bij jouw bedrijf",
-                "Kleine groepen professionals van verschillende organisaties",
+                "Halve dag interactieve sessie (4 uur)",
+                "Gegeven op locatie van je bedrijf",
+                "Kleine groepen professionals uit verschillende organisaties",
                 "Ochtend- of middagsessies"
             ]
         },
@@ -29,8 +75,8 @@ export default {
             "title": "Deelname",
             "items": [
                 "Minimaal 2 deelnemers per organisatie",
-                "Ideaal voor teamleiders en veranderingsadvocaten",
-                "Basis digitale geletterdheid vereist",
+                "Ideaal voor teamleiders en veranderaars",
+                "Basis digitale vaardigheden vereist",
                 "Open voor alle sectoren en industrieën"
             ]
         }
@@ -39,58 +85,58 @@ export default {
         "title": "Leertraject",
         "before": {
             "title": "Vooraf",
-            "description": "Pre-workshop assessment en voorbereidingsmaterialen om je huidige AI-uitdagingen en kansen te identificeren."
+            "description": "Voorbereidingsmateriaal en assessment voorafgaand aan de workshop om je huidige AI-uitdagingen en kansen te identificeren."
         },
         "during": {
             "title": "Tijdens",
-            "description": "Interactieve sessies die theorie en praktijk combineren, met discussies over praktijkvoorbeelden en actieplannen."
+            "description": "Interactieve sessies die theorie en praktijk combineren, met discussies over praktijkvoorbeelden en actieplanning."
         },
         "after": {
             "title": "Achteraf",
-            "description": "Persoonlijke follow-up sessie na 2 weken om de implementatievoortgang te bespreken en te verbinden met het peer-netwerk."
+            "description": "Persoonlijke follow-up sessie na 2 weken om de voortgang van de implementatie te bespreken en verbinding te maken met het peer-netwerk."
         }
     },
     "whoShouldJoin": {
-        "title": "Voor Wie?",
+        "title": "Wie Zou Moeten Deelnemen?",
         "intro": "Deze workshop is ideaal voor professionals die:",
         "items": [
-            "Teams leiden of managen",
-            "Verantwoorde AI-adoptie in hun organisatie willen stimuleren",
-            "Op zoek zijn naar praktische implementatiestrategieën",
-            "Waarde hechten aan duurzaam en ethisch technologiegebruik",
-            "Geïnteresseerd zijn in het opbouwen van een peer-learning netwerk"
+            "Teams leiden of beheren",
+            "Verantwoordelijke AI-adoptie in hun organisatie willen stimuleren",
+            "Praktische implementatiestrategieën zoeken",
+            "Duurzaam en ethisch technologiegebruik waarderen",
+            "Geïnteresseerd zijn in het opbouwen van een peer learning netwerk"
         ]
     },
     "facilitators": {
         "title": "Ontmoet Je Facilitators",
         "sytze": {
             "name": "Sytze Simonse",
-            "bio": "Een ervaren technisch docent die op verschillende niveaus heeft lesgegeven, van universitaire cursussen in Remote Sensing & Machine Learning tot informatica op de middelbare school. Met een achtergrond in Geo-Information Sciences en ervaring in digitale transformatie, blinkt Sytze uit in het toegankelijk en uitvoerbaar maken van complexe technische concepten."
+            "bio": "Een ervaren technische docent die op verschillende niveaus heeft lesgegeven, van universitaire cursussen in Remote Sensing & Machine Learning tot middelbare school Informatica. Met een achtergrond in Geo-Information Sciences en ervaring in digitale transformatie, blinkt Sytze uit in het toegankelijk en uitvoerbaar maken van complexe technische concepten."
         },
         "kamiel": {
             "name": "Kamiel Verhelst",
-            "bio": "Ontwikkelaar met een passie voor open source, Geo en technologie met maatschappelijke impact. Technisch Data Consultant bij Geodan en Mede-oprichter van Watkanikdoen.nl. Combineert technische expertise met een visie voor het creëren van betekenisvolle technologische oplossingen die de samenleving dienen."
+            "bio": "Ontwikkelaar met een passie voor open source, Geo en technologie met maatschappelijke impact. Technisch Data Consultant bij Geodan en mede-oprichter van Watkanikdoen.nl. Combineert technische expertise met een visie voor het creëren van betekenisvolle technologische oplossingen die de samenleving dienen."
         }
     },
     "achievements": {
-        "title": "Wat Je Zult Bereiken",
+        "title": "Wat Je Zal Bereiken",
         "opportunities": {
-            "title": "Kansen Ontdekken",
-            "description": "Leer AI-kansen identificeren en evalueren specifiek voor de context en uitdagingen van jouw organisatie."
+            "title": "Kansen Vinden",
+            "description": "Leer AI-kansen te identificeren en te evalueren die specifiek zijn voor de context en uitdagingen van jouw organisatie."
         },
         "implementation": {
-            "title": "In Praktijk Brengen",
-            "description": "Ontwikkel praktische strategieën voor het implementeren van AI-oplossingen met effectief beheer van risico's en middelen."
+            "title": "Het Waarmaken",
+            "description": "Ontwikkel praktische strategieën voor het implementeren van AI-oplossingen terwijl je risico's en middelen effectief beheert."
         },
         "people": {
-            "title": "Mensen Meekrijgen",
-            "description": "Ontwikkel vaardigheden om verandering te leiden en adoptie van AI-initiatieven binnen je team en organisatie te stimuleren."
+            "title": "Mensen Meenemen",
+            "description": "Bouw vaardigheden op om verandering te leiden en de adoptie van AI-initiatieven binnen je team en organisatie te bevorderen."
         }
     },
     "cta": {
-        "title": "Doe Mee aan de Volgende Sessie",
-        "timing": "Eerste sessies vanaf de derde week van februari 2025",
-        "limit": "Beperkt tot 12 deelnemers per sessie",
-        "button": "Toon Interesse"
+        "title": "Join Our Next Session",
+        "timing": "First sessions starting from the third week of February 2025",
+        "limit": "Limited to 12 participants per session",
+        "button": "Show Interest"
     }
-}
+};

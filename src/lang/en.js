@@ -1,6 +1,52 @@
 export default {
     "meta": {
-        "title": "Bonsai | AI, grounded in values"
+        "title": "Bonsai | AI, rooted in values"
+    },
+    "header": {
+        "slogan": "AI, rooted in values",
+        "title": "Discover the value of AI for your organization",
+    },
+    "mission": {
+        "title": "Why We Exist",
+        "mainText": "AI is changing our world at an unprecedented pace. As an organization, you want to move along, but not at the expense of your values and vision. Big-tech suggests that their way is the only way - but there are strong alternatives and we believe it can be different. Bonsai helps you implement AI solutions while you remain in control. As an autonomous organization, you choose open solutions and take responsibility for the future of AI yourself.",
+        "values": {
+            "title": "Our Values",
+            "openPrivate": {
+                "title": "Open but Private",
+                "description": "We champion transparency while protecting privacy"
+            },
+            "autonomous": {
+                "title": "Autonomous",
+                "description": "Independent thinking leads to better solutions"
+            },
+            "responsible": {
+                "title": "Responsible",
+                "description": "We prioritize ethical considerations in every decision"
+            }
+        }
+    },
+    "approach": {
+        "title": "How We Work",
+        "labDescription": "Our Lab approach combines hands-on experience with collaborative learning",
+        "modules": {
+            "title": "Learning Modules",
+            "selfHosting": {
+                "title": "Self-hosting AI Models",
+                "description": "Take control of your AI infrastructure"
+            },
+            "promptTraining": {
+                "title": "Prompt Engineering",
+                "description": "Master the art of effective AI communication"
+            },
+            "ethics": {
+                "title": "AI & Ethics",
+                "description": "Navigate the ethical implications of AI deployment"
+            }
+        }
+    },
+    "team": {
+        "title": "Who We Are",
+        "description": "We're technologists with a heart for society, taking responsibility for shaping AI's future. Our expertise is matched only by our commitment to ethical innovation."
     },
     "header": {
         "title": "Onderzoek samen met ons wat AI kan betekenen voor jouw organisatie",
