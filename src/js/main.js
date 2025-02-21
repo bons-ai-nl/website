@@ -134,12 +134,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Set up language toggle
-    const langToggle = document.getElementById('langToggle');
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'nl' : 'en';
-            updateContent();
+    // Set up language buttons
+    const langButtons = document.querySelectorAll('.lang-btn');
+    
+    function updateLanguageButtons() {
+        langButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === currentLang);
         });
     }
+
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            currentLang = btn.dataset.lang;
+            updateContent();
+            updateLanguageButtons();
+        });
+    });
+
+    // Initialize active language button
+    updateLanguageButtons();
 });

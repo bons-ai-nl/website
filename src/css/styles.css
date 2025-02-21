@@ -221,3 +221,16 @@ ul {
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(33, 158, 188, 0.4);
 }
+
+.language-switcher .lang-btn {
+    transition: all 0.3s ease;
+}
+
+.language-switcher .lang-btn.active {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.language-switcher .lang-btn:hover {
+    color: var(--secondary-color);
+}
