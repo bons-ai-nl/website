@@ -1,6 +1,6 @@
 export default {
     "meta": {
-        "title": "AI Learning Lab | Praktische AI Implementatie"
+        "title": "Bonsai | AI, gegrond in waarden"
     },
     "header": {
         "title": "AI Learning Lab",

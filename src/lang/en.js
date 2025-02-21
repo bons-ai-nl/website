@@ -1,6 +1,6 @@
 export default {
     "meta": {
-        "title": "AI Learning Lab | Practical AI Implementation"
+        "title": "Bonsai | AI, grounded in values"
     },
     "header": {
         "title": "Onderzoek samen met ons wat AI kan betekenen voor jouw organisatie",
