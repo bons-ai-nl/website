@@ -14,49 +14,85 @@
     <div class="root-background">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
             <!-- Main trunk -->
-            <path d="M500,0 Q500,100 500,150 
-                     Q500,200 480,250 
-                     Q460,300 450,400" 
-                  pathLength="1" stroke-dasharray="1">
-                <animate attributeName="stroke-dashoffset" 
-                         from="1" to="0" 
+            <path d="M480,0 C520,0 520,0 520,0
+                     L520,100 
+                     C520,150 500,200 480,250
+                     C460,300 440,350 420,400
+                     C418,405 415,407 410,407
+                     C405,407 402,405 400,400
+                     L400,250
+                     C400,200 420,150 420,100
+                     L420,0
+                     Z">
+                <animate attributeName="opacity" 
+                         from="0" to="1" 
+                         dur="1.5s" 
+                         fill="freeze" />
+            </path>
+            
+            <!-- Left roots -->
+            <path d="M410,407
+                     C400,410 390,420 380,440
+                     C370,460 350,480 320,500
+                     C310,507 300,510 290,507
+                     C280,504 275,497 273,490
+                     C290,470 300,450 305,430
+                     C310,410 320,400 330,395
+                     C340,390 350,390 360,395
+                     C370,400 380,405 390,405
+                     Z">
+                <animate attributeName="opacity" 
+                         from="0" to="1" 
                          dur="2s" 
                          fill="freeze" />
             </path>
             
-            <!-- Primary roots -->
-            <path d="M450,400 Q400,450 350,470 Q300,490 250,480
-                     M450,400 Q420,500 380,550 Q340,600 300,620
-                     M450,400 Q470,450 500,500 Q530,550 580,570
-                     M450,400 Q500,450 550,460 Q600,470 650,460"
-                  pathLength="1" stroke-dasharray="1">
-                <animate attributeName="stroke-dashoffset" 
-                         from="1" to="0" 
-                         dur="3s" 
+            <!-- Right roots -->
+            <path d="M410,407
+                     C420,410 430,420 440,440
+                     C450,460 470,480 500,500
+                     C510,507 520,510 530,507
+                     C540,504 545,497 547,490
+                     C530,470 520,450 515,430
+                     C510,410 500,400 490,395
+                     C480,390 470,390 460,395
+                     C450,400 440,405 430,405
+                     Z">
+                <animate attributeName="opacity" 
+                         from="0" to="1" 
+                         dur="2s" 
                          fill="freeze" />
             </path>
             
-            <!-- Secondary roots -->
-            <path d="M350,470 Q320,490 300,520 Q280,550 260,560
-                     M380,550 Q360,580 350,600 Q340,620 320,640
-                     M500,500 Q520,530 540,550 Q560,570 580,580
-                     M550,460 Q580,480 600,500 Q620,520 640,530"
-                  pathLength="1" stroke-dasharray="1">
-                <animate attributeName="stroke-dashoffset" 
-                         from="1" to="0" 
-                         dur="4s" 
+            <!-- Left sub-roots -->
+            <path d="M290,507
+                     C280,510 270,520 260,540
+                     C250,560 240,580 220,600
+                     C215,605 210,607 205,605
+                     C200,603 198,598 197,593
+                     C210,580 220,560 225,540
+                     C230,520 240,510 250,505
+                     C260,500 270,500 280,503
+                     Z">
+                <animate attributeName="opacity" 
+                         from="0" to="1" 
+                         dur="2.5s" 
                          fill="freeze" />
             </path>
             
-            <!-- Root tips -->
-            <path d="M260,560 Q250,570 240,580
-                     M320,640 Q310,650 300,660
-                     M580,580 Q590,590 600,595
-                     M640,530 Q650,540 660,545"
-                  pathLength="1" stroke-dasharray="1">
-                <animate attributeName="stroke-dashoffset" 
-                         from="1" to="0" 
-                         dur="5s" 
+            <!-- Right sub-roots -->
+            <path d="M530,507
+                     C540,510 550,520 560,540
+                     C570,560 580,580 600,600
+                     C605,605 610,607 615,605
+                     C620,603 622,598 623,593
+                     C610,580 600,560 595,540
+                     C590,520 580,510 570,505
+                     C560,500 550,500 540,503
+                     Z">
+                <animate attributeName="opacity" 
+                         from="0" to="1" 
+                         dur="2.5s" 
                          fill="freeze" />
             </path>
         </svg>

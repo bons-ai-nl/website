@@ -102,9 +102,8 @@ body {
 }
 
 .root-background path {
-    stroke: var(--primary-color);
-    fill: none;
-    stroke-width: 2;
+    fill: var(--primary-color);
+    opacity: 0.1;
 }
 
 h1, h2, h3, h4, h5, h6 {
