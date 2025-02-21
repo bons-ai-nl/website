@@ -138,30 +138,15 @@ ul {
     padding-left: 1.5rem;
 }
 
-.card {
-    background: rgba(31, 41, 55, 0.5);
-    border: 1px solid rgba(142, 202, 230, 0.1);
-}
-
-.logo-container {
-    width: 200px;
-    margin: 0 auto;
-}
-
-.contact-form input, 
-.contact-form textarea, 
-.contact-form select {
-    background: rgba(31, 41, 55, 0.7);
-    border: 1px solid rgba(142, 202, 230, 0.2);
-    color: #e0e0e0;
-}
-
 .contact-form input:focus, 
-.contact-form textarea:focus, 
-.contact-form select:focus {
-    border-color: var(--primary-color);
+.contact-form textarea:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(33, 158, 188, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
 }
 
 .navbar {
