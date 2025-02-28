@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/* Import Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom fonts */
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root {
+    --background-color: #FFE9D3;
+    --text-color: #242424;
+    --background-color-2: #FBCFAF;
+    --primary-color: #2D3047;
+    --secondary-color: #048A81;
+    --accent-color: #FF3864;
+    --accent-color-2: #d780ff;
+    --hover-color: #242424;
+    --footer-bg: #141414;
+}
+
+body {
+    font-family: 'Outfit', 'Ubuntu', 'Space Grotesk', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position: relative;
+}
+
+.root-background {
+    position: absolute;
+    top: 64px; /* height of nav */
+    left: 0;
+    width: 100%;
+    height: 800px;
+    z-index: 99;
+    opacity: 0.65;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.root-background path {
+    fill: var(--primary-color);
+    opacity: 0.1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Young Serif', 'Ubuntu', 'Space Grotesk', sans-serif;
+    font-weight: 800;
+}
+
+h1 {
+    @apply text-7xl;
+}
+
+
+/* Override Bootstrap's default link colors */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+nav {
+}
+
+/* Add bullet points styling */
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(142, 202, 230, 0.1);
+}
+
+.logo-container {
+    width: 40px;
+}
+
+.footer {
+    background-color: var(--footer-bg);
+    border-top: 1px solid rgba(142, 202, 230, 0.1);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.transition-ease-07 {
+    transition: all 0.7s ease;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.cta-button {
+    animation: pulse 2s infinite;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(33, 158, 188, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(33, 158, 188, 0.4);
+}
+
+.language-switcher .lang-btn {
+    transition: all 0.3s ease;
+}
+
+.language-switcher .lang-btn.active {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.language-switcher .lang-btn:hover {
+    color: var(--secondary-color);
+}
