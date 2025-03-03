@@ -143,6 +143,8 @@ export default {
         "name": "Naam",
         "email": "E-mail",
         "message": "Bericht",
+        "success": "Je bericht is succesvol verstuurd. U ontvangt binnenkort reactie van ons.",
+        "fail": "Er is iets misgegaan. Probeer het later opnieuw of stuur ons een email via info@bons-ai.nl."
     },
     "footer": {
         "email": "info@bons-ai.nl",

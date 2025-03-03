@@ -139,6 +139,8 @@ export default {
         "name": "Name",
         "email": "Email",
         "message": "Message",
+        "success": "Your message has been sent successfully. We'll reply to your request shortly.",
+        "fail": "Something went wrong. Please try again later or send us an email at info@bons-ai.nl."
     },
     "footer": {
         "email": "info@bons-ai.nl",
