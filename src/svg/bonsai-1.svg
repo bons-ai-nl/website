@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Pot -->
+
+ <!-- Trunk -->
+ <!-- Branches -->
+ <!-- Foliage -->
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m100,300l200,0l-30,100l-140,0l-30,-100z" fill="#2D3142" id="svg_1"/>
+  <rect fill="#0E1C36" height="20" id="svg_2" rx="10" width="219" x="90" y="280"/>
+  <rect fill="#1E1E1E" height="130" id="svg_3" width="20" x="190" y="150"/>
+  <rect fill="#1E1E1E" height="15" id="svg_4" width="100" x="190" y="180"/>
+  <rect fill="#1E1E1E" height="15" id="svg_5" width="80" x="110" y="210"/>
+  <rect fill="#1E1E1E" height="60" id="svg_6" width="15" x="145" y="150"/>
+  <rect fill="#00897B" height="80" id="svg_7" rx="40" transform="matrix(1, 0, 0, 1, 0, 0)" width="140" x="107" y="77"/>
+  <rect fill="#00897B" height="60" id="svg_8" rx="30" width="120" x="56" y="181"/>
+  <rect fill="#00897B" height="60" id="svg_9" rx="30" width="100" x="270" y="150"/>
+ </g>
+</svg>
