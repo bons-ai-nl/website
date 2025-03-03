@@ -43,6 +43,7 @@ function extractElementsFromSVG(svgElement) {
             fill: rect.getAttribute('fill'),
             stroke: rect.getAttribute('stroke'),
             strokeWidth: rect.getAttribute('stroke-width'),
+            rx: rect.getAttribute('rx'),
             id: rect.id
         });
     });

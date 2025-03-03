@@ -13,7 +13,7 @@ import enTranslations from '../lang/en.js'
 import nlTranslations from '../lang/nl.js'
 
 // Import SVG morphing utilities
-import { svgPathsCollection, viewBox, width, height } from './svgMorpher.js'
+import { svgElementsCollection, viewBox, width, height } from './svgMorpher.js'
 
 const translations = {
     en: enTranslations,
@@ -68,19 +68,33 @@ document.addEventListener('DOMContentLoaded', () => {
         svg.setAttribute('height', height);
         svg.classList.add('bonsai-svg');
         
-        // Create initial paths
-        const initialPaths = svgPathsCollection[0];
-        console.log(initialPaths);
+        // Create initial elements (paths and rects)
+        const initialElements = svgElementsCollection[0];
+        console.log(initialElements);
         
-        initialPaths.forEach(pathData => {
-            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-            path.setAttribute('d', pathData.d);
-            path.setAttribute('fill', pathData.fill || 'none');
-            if (pathData.stroke) path.setAttribute('stroke', pathData.stroke);
-            if (pathData.strokeWidth) path.setAttribute('stroke-width', pathData.strokeWidth);
-            if (pathData.id) path.id = pathData.id;
-            path.classList.add('morphing-path', 'transition-ease-07');
-            svg.appendChild(path);
+        initialElements.forEach(elementData => {
+            let element;
+            
+            if (elementData.type === 'path') {
+                element = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                element.setAttribute('d', elementData.d);
+            } else if (elementData.type === 'rect') {
+                element = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                element.setAttribute('x', elementData.x);
+                element.setAttribute('y', elementData.y);
+                element.setAttribute('width', elementData.width);
+                element.setAttribute('height', elementData.height);
+                element.setAttribute('rx', elementData.rx || '0');
+            }
+            
+            // Set common attributes
+            element.setAttribute('fill', elementData.fill || 'none');
+            if (elementData.stroke) element.setAttribute('stroke', elementData.stroke);
+            if (elementData.strokeWidth) element.setAttribute('stroke-width', elementData.strokeWidth);
+            if (elementData.id) element.id = elementData.id;
+            
+            element.classList.add('morphing-element', 'transition-ease-07');
+            svg.appendChild(element);
         });
         
         // Add SVG to container
@@ -89,20 +103,31 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set up morphing interval
         setInterval(() => {
             // Get next bonsai index
-            currentBonsaiIndex = (currentBonsaiIndex + 1) % svgPathsCollection.length;
+            currentBonsaiIndex = (currentBonsaiIndex + 1) % svgElementsCollection.length;
             
-            // Get paths for next bonsai
-            const nextPaths = svgPathsCollection[currentBonsaiIndex];
+            // Get elements for next bonsai
+            const nextElements = svgElementsCollection[currentBonsaiIndex];
             
-            // Update all paths
-            const currentPaths = svg.querySelectorAll('path');
-            currentPaths.forEach((path, index) => {
-                if (nextPaths[index]) {
-                    const nextPath = nextPaths[index];
-                    path.setAttribute('d', nextPath.d);
-                    if (nextPath.fill) path.setAttribute('fill', nextPath.fill);
-                    if (nextPath.stroke) path.setAttribute('stroke', nextPath.stroke);
-                    if (nextPath.strokeWidth) path.setAttribute('stroke-width', nextPath.strokeWidth);
+            // Update all elements
+            const currentElements = svg.querySelectorAll('path, rect');
+            currentElements.forEach((element, index) => {
+                if (nextElements[index]) {
+                    const nextElement = nextElements[index];
+                    
+                    // Update specific attributes based on element type
+                    if (element.tagName.toLowerCase() === 'path' && nextElement.type === 'path') {
+                        element.setAttribute('d', nextElement.d);
+                    } else if (element.tagName.toLowerCase() === 'rect' && nextElement.type === 'rect') {
+                        element.setAttribute('x', nextElement.x);
+                        element.setAttribute('y', nextElement.y);
+                        element.setAttribute('width', nextElement.width);
+                        element.setAttribute('height', nextElement.height);
+                    }
+                    
+                    // Update common attributes
+                    if (nextElement.fill) element.setAttribute('fill', nextElement.fill);
+                    if (nextElement.stroke) element.setAttribute('stroke', nextElement.stroke);
+                    if (nextElement.strokeWidth) element.setAttribute('stroke-width', nextElement.strokeWidth);
                 }
             });
         }, 2000);

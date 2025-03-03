@@ -172,8 +172,9 @@ ul {
     transition: all 0.7s ease;
 }
 
-.morphing-path {
-    transition: d 0.7s ease, fill 0.7s ease, stroke 0.7s ease, stroke-width 0.7s ease;
+.morphing-element {
+    transition: d 0.7s ease, fill 0.7s ease, stroke 0.7s ease, stroke-width 0.7s ease,
+                x 0.7s ease, y 0.7s ease, width 0.7s ease, height 0.7s ease;
 }
 
 .bonsai-svg {
