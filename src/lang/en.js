@@ -1,10 +1,12 @@
 export default {
     "meta": {
-        "title": "Bonsai | AI, rooted in values"
+        "title": "Bonsai | AI, rooted in values",
+        "name": "Bonsai",
     },
     "header": {
         "slogan": "AI, rooted in values",
         "title": "Discover the value of AI for your organization",
+        "contact-us": "Get in touch"
     },
     "mission": {
         "title": "The Why",
@@ -47,13 +49,6 @@ export default {
     "team": {
         "title": "Who We Are",
         "description": "We're technologists with a heart for society, taking responsibility for shaping AI's future. Our expertise is matched only by our commitment to ethical innovation."
-    },
-    "header": {
-        "title": "Onderzoek samen met ons wat AI kan betekenen voor jouw organisatie",
-        "subtitle": "Where Practice Meets Innovation"
-    },
-    "intro": {
-        "description": "Unlike traditional workshops focusing on technical possibilities alone, our Learning Lab helps you discover practical, responsible AI implementations while building on your industry's, company's and team's unique context and challenges. You'll leave with both actionable insights and a network of peers to support your AI journey."
     },
     "approach": {
         "title": "Our Approach",
@@ -138,5 +133,14 @@ export default {
         "timing": "First sessions starting from the third week of February 2025",
         "limit": "Limited to 12 participants per session",
         "button": "Show Interest"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+    },
+    "footer": {
+        "email": "info@bons-ai.nl",
     }
 };
