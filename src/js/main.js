@@ -153,4 +153,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize active language button
     updateLanguageButtons();
+
+    // form listener
+    document.getElementById('contactForm').addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+
+        const formData = new FormData(ev.target);
+
+        // Adding all form data to an object
+        const formObject = {};
+        formData.forEach((value, key) => {
+            formObject[key] = value;
+        });
+
+        try {
+            const response = await fetch('https://api.formbee.dev/formbee/258ef555-8ce5-4cc9-b916-b357e6231add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formObject)
+            });
+
+            if (response.ok) {
+                document.getElementById('formSuccessMessage').classList.remove('hidden');
+                document.getElementById('formErrorMessage').classList.add('hidden');
+                // clear form
+                document.getElementById('contactForm').reset();
+            } else {
+                document.getElementById('formErrorMessage').classList.remove('hidden');
+                document.getElementById('formSuccessMessage').classList.add('hidden');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Error submitting form.');
+        }
+    });
 });
