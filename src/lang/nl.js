@@ -7,7 +7,7 @@ export default {
         "title": "Ontdek de waarde van AI voor jouw organisatie",
     },
     "mission": {
-        "title": "Waarom We Bestaan",
+        "title": "Het Waarom",
         "mainText": "AI verandert onze wereld in een ongekend tempo. Als organisatie wil je meebewegen, maar niet ten koste van je waarden en visie. Big-tech suggereert dat hun weg de enige weg is - maar er zijn sterke alternatieven en wij geloven dat het anders kan. Bonsai helpt je bij het implementeren van AI-oplossingen waarbij jij aan het roer blijft. Als autonome organisatie kies je voor open oplossingen en neem je zelf verantwoordelijkheid voor de toekomst van AI.",
         "values": {
             "title": "Onze Waarden",
@@ -16,11 +16,11 @@ export default {
                 "description": "Wij pleiten voor transparantie terwijl we privacy beschermen"
             },
             "autonomous": {
-                "title": "Autonoom",
+                "title": "Autonomie",
                 "description": "Onafhankelijk denken leidt tot betere oplossingen"
             },
             "responsible": {
-                "title": "Verantwoordelijk",
+                "title": "Verantwoordelijkheid",
                 "description": "We geven prioriteit aan ethische overwegingen bij elke beslissing"
             }
         }
