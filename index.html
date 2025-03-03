@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="meta.title">Bonsai | AI, gegrond in waarden</title>
+    <title data-i18n="meta.title">Bonsai | AI, geworteld in waarden</title>
 
-  <script type="module" crossorigin src="/assets/index-BWtbdzzY.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DzYybiOT.css">
+  <script type="module" crossorigin src="/assets/index-BCo4Z7rr.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-fIB0s6Zk.css">
 </head>
 
 <body class="gradient-bg min-h-screen">
-    <nav class="bg-white border-b border-white/10 fixed top-0 w-full z-50" x-data="{ isOpen: false }">
+    <nav class="bg-white border-b border-gray/10 fixed top-0 w-full z-50" x-data="{ isOpen: false }">
         <div class="max-w-[1500px] mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex">
@@ -79,33 +79,43 @@
               </svg>
         </div> -->
         <!-- Title Section -->
-        <div id="section-title" class="w-full mt-20">
-            <div class="bg-[var(--background-color-2)] p-16 rounded-3xl mb-12 flex">
-                <div class="w-2/3">
-                    <h1 class="font-bold mb-4 text-left" data-i18n="header.title"></h1>
+        <div id="section-title" class="w-full md:mt-20">
+            <div class="bg-[var(--background-color-2)] p-8 md:p-16 rounded-3xl mb-12 flex flex-col justify-between lg:min-h-[500px]">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/3 z-10">
+                        <h1 class="font-bold mb-4 text-left text-4xl md:text-6xl" data-i18n="header.title"></h1>
+                    </div>
+                    <div class="w-full md:w-1/3 relative">
+                        <svg class="md:absolute md:right-0 md:top-1/2 -translate-y-1/4 md:-translate-y-1/2 z-0 w-full h-auto" viewBox="0 0 330 330" version="1.1">
+                            <g fill-rule="evenodd">
+                                <path id="morphing-shape-1" class="transition-ease-07"
+                                    fill="var(--secondary-color)"
+                                    opacity="0.5"
+                                    d="M 254 44 C 272 64 280 70 300 120 C 320 170 310 220 280 260 C 250 300 200 304 160 284 C 120 264 80 240 60 200 C 40 160 40 120 60 80 C 80 40 87 40 121 24 C 150 14 161 12 199 16 C 216 18 234 29 254 44">
+                                </path>
+                                <path id="morphing-shape-2" class="transition-ease-07"
+                                    fill="var(--accent-color)"
+                                    opacity="0.5"
+                                    d="M 212 205 C 224 193 208 177 212 169 C 260 137 256 137 228 129 C 228 81 220 69 200 85 C 140 69 132 85 132 109 C 92 137 80 133 120 165 C 100 189 112 197 128 193 C 136 209 132 205 160 197 C 172 217 184 221 212 205">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
                 </div>
-                <div class="w-1/3 relative">
-                    <svg class="absolute right-0 top-1/2 -translate-y-1/2 w-full h-auto" viewBox="0 0 330 330" version="1.1">
-                        <g fill-rule="evenodd">
-                            <path id="morphing-shape-1" class="transition-ease-07"
-                                fill="var(--secondary-color)"
-                                opacity="0.5"
-                                d="M 254 44 C 272 64 280 70 300 120 C 320 170 310 220 280 260 C 250 300 200 304 160 284 C 120 264 80 240 60 200 C 40 160 40 120 60 80 C 80 40 87 40 121 24 C 150 14 161 12 199 16 C 216 18 234 29 254 44">
-                            </path>
-                            <path id="morphing-shape-2" class="transition-ease-07"
-                                fill="var(--accent-color)"
-                                opacity="0.5"
-                                d="M 212 205 C 224 193 208 177 212 169 C 260 137 256 137 228 129 C 228 81 220 69 200 85 C 140 69 132 85 132 109 C 92 137 80 133 120 165 C 100 189 112 197 128 193 C 136 209 132 205 160 197 C 172 217 184 221 212 205">
-                            </path>
-                        </g>
-                    </svg>
+                <div class="flex">
+                    <a href="#contact">
+                        <button
+                            class="w-full bg-[var(--accent-color)] text-white px-6 py-4 rounded-lg hover:bg-[var(--secondary-color)] transition-colors font-medium text-lg" data-i18n="header.contact-us">
+                            Contact us
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
 
         <!-- Mission Section -->
         <div id="mission" class="w-full mb-16">
-            <div class="bg-white p-16 rounded-3xl">
+            <div class="bg-white p-8 md:p-16 rounded-3xl">
                 <h2 class="text-3xl font-bold mb-6 section-title" data-i18n="mission.title"></h2>
                 <p class="text-xl mb-12" data-i18n="mission.mainText"></p>
                 
@@ -129,13 +139,13 @@
 
         <!-- Approach Section -->
         <div id="approach" class="w-full mb-16">
-            <div class="bg-[var(--background-color-2)] p-16 rounded-3xl">
+            <div class="bg-[var(--background-color-2)] p-8 md:p-16 rounded-3xl">
                 <h2 class="text-3xl font-bold mb-6 section-title" data-i18n="approach.title"></h2>
                 <p class="text-xl mb-12" data-i18n="approach.labDescription"></p>
                 
                 <h3 class="text-2xl font-bold mb-6" data-i18n="approach.modules.title"></h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="p-3 bg-[var(--secondary-color)] rounded-lg">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="p-3 bg-[var(--secondary-color)] rounded-xl">
                         <div class="p-6 bg-white rounded-lg h-full">
                             <h4 class="text-xl font-bold mb-3" data-i18n="approach.modules.selfHosting.title"></h4>
                             <p data-i18n="approach.modules.selfHosting.description"></p>
@@ -147,7 +157,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="p-3 bg-[var(--accent-color)] rounded-lg">
+                    <div class="p-3 bg-[var(--accent-color)] rounded-xl">
                         <div class="p-6 bg-white rounded-lg h-full">
                             <h4 class="text-xl font-bold mb-3" data-i18n="approach.modules.promptTraining.title"></h4>
                             <p data-i18n="approach.modules.promptTraining.description"></p>
@@ -158,7 +168,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="p-3 bg-[var(--accent-color-2)] rounded-lg">
+                    <div class="p-3 bg-[var(--accent-color-2)] rounded-xl">
                         <div class="p-6 bg-white rounded-lg h-full">
                             <h4 class="text-xl font-bold mb-3" data-i18n="approach.modules.ethics.title"></h4>
                             <p data-i18n="approach.modules.ethics.description"></p>
@@ -176,7 +186,7 @@
 
         <!-- Team Section -->
         <div id="team" class="w-full mb-16">
-            <div class="bg-white p-16 rounded-3xl">
+            <div class="bg-white p-8 md:p-16 rounded-3xl">
                 <h2 class="text-3xl font-bold mb-6 section-title" data-i18n="team.title"></h2>
                 <p class="text-xl" data-i18n="team.description"></p>
             </div>
@@ -184,23 +194,23 @@
 
 
         <section id="contact" class="w-full mb-16">
-            <div class="bg-white p-16 rounded-3xl">
-                <h2 class="text-3xl font-bold mb-6 section-title">Contact Us</h2>
+            <div class="bg-white p-8 md:p-16 rounded-3xl">
+                <h2 class="text-3xl font-bold mb-6 section-title" data-i18n="contact.title">Contact Us</h2>
                 <div class="max-w-2xl mx-auto">
                     <form action="https://api.formbee.dev/formbee/258ef555-8ce5-4cc9-b916-b357e6231add" method="POST"
                         class="contact-form space-y-6">
                         <div>
-                            <label for="name" class="block text-base font-medium mb-2">Name</label>
+                            <label for="name" class="block text-base font-medium mb-2" data-i18n="contact.name">Name</label>
                             <input type="text" id="name" name="name" required 
                                 class="w-full px-4 py-3 rounded-lg bg-[var(--background-color)] border-2 border-transparent focus:border-[var(--secondary-color)] transition-colors">
                         </div>
                         <div>
-                            <label for="email" class="block text-base font-medium mb-2">Email</label>
+                            <label for="email" class="block text-base font-medium mb-2"  data-i18n="contact.email">Email</label>
                             <input type="email" id="email" name="email" required 
                                 class="w-full px-4 py-3 rounded-lg bg-[var(--background-color)] border-2 border-transparent focus:border-[var(--secondary-color)] transition-colors">
                         </div>
                         <div>
-                            <label for="message" class="block text-base font-medium mb-2">Message</label>
+                            <label for="message" class="block text-base font-medium mb-2"  data-i18n="contact.message">Message</label>
                             <textarea id="message" name="message" rows="5" required
                                 class="w-full px-4 py-3 rounded-lg bg-[var(--background-color)] border-2 border-transparent focus:border-[var(--secondary-color)] transition-colors"></textarea>
                         </div>
@@ -218,12 +228,12 @@
         <div class="container mx-auto px-4 max-w-4xl text-white">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">AI Learning Lab</h3>
-                    <p class="text-gray-400">Empowering organizations with responsible AI implementation</p>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="meta.name">Bonsai</h3>
+                    <p class="text-gray-400" data-i18n="header.slogan">AI, geworteld in waarden</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Contact</h3>
-                    <p class="text-gray-400">info@ailearninglab.com</p>
+                    <p class="text-gray-400" data-i18n="footer.email"></p>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
