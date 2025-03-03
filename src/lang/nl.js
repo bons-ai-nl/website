@@ -57,7 +57,7 @@ export default {
     },
     "team": {
         "title": "Wie We Zijn",
-        "description": "Wij zijn technologen met een hart voor de samenleving, die verantwoordelijkheid nemen voor het vormgeven van de toekomst van AI. Onze expertise wordt alleen geëvenaard door onze toewijding aan ethische innovatie."
+        "description": "Wie zijn wij? Techneuten met een missie, gemotiveerd om een positieve impact te maken. Als oud-studiegenoten Geo-Informatiekunde uit Wageningen combineren we technische expertise met een sterke maatschappelijke visie."
     },
     "workshop": {
         "title": "Workshop Details",
