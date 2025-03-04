@@ -63,7 +63,17 @@ export default {
     },
     "team": {
         "title": "Wie we zijn",
-        "description": "Wie zijn wij? Techneuten met een missie, gemotiveerd om een positieve impact te maken. Als oud-studiegenoten Geo-Informatiekunde uit Wageningen combineren we technische expertise met een sterke maatschappelijke visie."
+        "description": "Wie zijn wij? Techneuten met een missie, gemotiveerd om een positieve impact te maken. Als oud-studiegenoten Geo-Informatiekunde uit Wageningen combineren we technische expertise met een sterke maatschappelijke visie.",
+        "facilitators": {
+            "kamiel": {
+                "name": "Kamiel Verhelst",
+                "bio": "Kamiel is softwareontwikkelaar, gespecialiseerd in GIS en Web development. Met zijn achtergrond in zowel sociale wetenschap als computer science is hij geinteresseerd in hoe technologie en maatschappij elkaar beïnvloeden."
+            },
+            "sytze": {
+                "name": "Sytze Simonse",
+                "bio": "Sytze heeft ervaring in het bedrijfsleven in zowel technische als business-rollen met een achtergrond in het (IT-)onderwijs. Hij weet hoe je organisaties kunt begeleiden bij technologische verandering."
+            }
+        }
     },
     "contact": {
         "title": "Neem contact met ons op",
