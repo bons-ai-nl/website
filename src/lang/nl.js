@@ -9,12 +9,12 @@ export default {
         "contact-us": "Neem contact met ons op"
     },
     "mission": {
-        "title": "Het Waarom",
+        "title": "Het waarom",
         "mainText": "AI verandert onze wereld in een ongekend tempo. Als organisatie wil je meebewegen, maar niet ten koste van je waarden en visie. Big-tech suggereert dat hun weg de enige weg is - maar er zijn sterke alternatieven en wij geloven dat het anders kan. Bonsai helpt je bij het implementeren van AI-oplossingen waarbij jij aan het roer blijft. Als autonome organisatie kies je voor open oplossingen en neem je zelf verantwoordelijkheid voor de toekomst van AI.",
         "values": {
-            "title": "Onze Waarden",
+            "title": "Onze waarden",
             "openPrivate": {
-                "title": "Open maar Privé",
+                "title": "Open maar privé",
                 "description": "Wij pleiten voor transparantie terwijl we privacy beschermen"
             },
             "autonomous": {
@@ -28,7 +28,7 @@ export default {
         }
     },
     "approach": {
-        "title": "Onze Aanpak",
+        "title": "Onze aanpak",
         "labDescription": "We werken volgens het \"Lab\"-format, waarin we een wederzijds leren. Er bestaat geen 'one-size-fits-all'-oplossing. Met een gestructureerde aanpak verkennen we samen de kansen en uitdagingen op gebied van AI binnen jouw organisatie.",
         "modules": {
             "title": "Modules",
@@ -56,11 +56,11 @@ export default {
         }
     },
     "team": {
-        "title": "Wie We Zijn",
+        "title": "Wie we zijn",
         "description": "Wie zijn wij? Techneuten met een missie, gemotiveerd om een positieve impact te maken. Als oud-studiegenoten Geo-Informatiekunde uit Wageningen combineren we technische expertise met een sterke maatschappelijke visie."
     },
     "workshop": {
-        "title": "Workshop Details",
+        "title": "Workshop details",
         "format": {
             "title": "Formaat",
             "items": [
@@ -96,7 +96,7 @@ export default {
         }
     },
     "whoShouldJoin": {
-        "title": "Wie Zou Moeten Deelnemen?",
+        "title": "Wie zou moeten deelnemen?",
         "intro": "Deze workshop is ideaal voor professionals die:",
         "items": [
             "Teams leiden of beheren",
@@ -107,7 +107,7 @@ export default {
         ]
     },
     "facilitators": {
-        "title": "Ontmoet Je Facilitators",
+        "title": "Ontmoet je facilitators",
         "sytze": {
             "name": "Sytze Simonse",
             "bio": "Een ervaren technische docent die op verschillende niveaus heeft lesgegeven, van universitaire cursussen in Remote Sensing & Machine Learning tot middelbare school Informatica. Met een achtergrond in Geo-Information Sciences en ervaring in digitale transformatie, blinkt Sytze uit in het toegankelijk en uitvoerbaar maken van complexe technische concepten."
@@ -118,22 +118,22 @@ export default {
         }
     },
     "achievements": {
-        "title": "Wat Je Zal Bereiken",
+        "title": "Wat je zal bereiken",
         "opportunities": {
-            "title": "Kansen Vinden",
+            "title": "Kansen vinden",
             "description": "Leer AI-kansen te identificeren en te evalueren die specifiek zijn voor de context en uitdagingen van jouw organisatie."
         },
         "implementation": {
-            "title": "Het Waarmaken",
+            "title": "Het waarmaken",
             "description": "Ontwikkel praktische strategieën voor het implementeren van AI-oplossingen terwijl je risico's en middelen effectief beheert."
         },
         "people": {
-            "title": "Mensen Meenemen",
+            "title": "Mensen meenemen",
             "description": "Bouw vaardigheden op om verandering te leiden en de adoptie van AI-initiatieven binnen je team en organisatie te bevorderen."
         }
     },
     "cta": {
-        "title": "Join Our Next Session",
+        "title": "Join our next session",
         "timing": "First sessions starting from the third week of February 2025",
         "limit": "Limited to 12 participants per session",
         "button": "Show Interest"
