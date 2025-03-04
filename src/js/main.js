@@ -24,8 +24,35 @@ let currentLang = 'nl';
 
 function updateContent() {
     document.documentElement.lang = currentLang;
+    
+    // Handle text content translations
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = translations[currentLang];
+       
+        try {
+            for (const k of keys) {
+                value = value[k];
+            }
+           
+            if (value === undefined) {
+                console.warn(`Translation missing for key: ${key} in language: ${currentLang}`);
+                return;
+            }
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = value;
+            } else {
+                element.textContent = value;
+            }
+        } catch (error) {
+            console.error(`Error setting translation for key: ${key}`, error);
+        }
+    });
+    
+    // Handle href attributes
+    document.querySelectorAll('[data-i18n-href]').forEach(element => {
+        const key = element.getAttribute('data-i18n-href');
         const keys = key.split('.');
         let value = translations[currentLang];
         
@@ -35,17 +62,13 @@ function updateContent() {
             }
             
             if (value === undefined) {
-                console.warn(`Translation missing for key: ${key} in language: ${currentLang}`);
+                console.warn(`Translation missing for href key: ${key} in language: ${currentLang}`);
                 return;
             }
-
-            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                element.placeholder = value;
-            } else {
-                element.textContent = value;
-            }
+            
+            element.setAttribute('href', value);
         } catch (error) {
-            console.error(`Error setting translation for key: ${key}`, error);
+            console.error(`Error setting href for key: ${key}`, error);
         }
     });
 }

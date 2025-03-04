@@ -68,12 +68,12 @@ export default {
             "kamiel": {
                 "name": "Kamiel Verhelst",
                 "bio": "Kamiel is softwareontwikkelaar, gespecialiseerd in GIS en Web development. Met zijn achtergrond in zowel sociale wetenschap als computer science is hij geinteresseerd in hoe technologie en maatschappij elkaar beïnvloeden.",
-                "linkedin": "https://www.linkedin.com/in/kamielverhelst/"
+                "linkedin": "https://www.linkedin.com/in/kamiel-verhelst/"
             },
             "sytze": {
                 "name": "Sytze Simonse",
                 "bio": "Sytze heeft ervaring in het bedrijfsleven in zowel technische als business-rollen met een achtergrond in het (IT-)onderwijs. Hij weet hoe je organisaties kunt begeleiden bij technologische verandering.",
-                "linkedin": "https://www.linkedin.com/in/sytze-simonse/"
+                "linkedin": "https://www.linkedin.com/in/sytze-simonse-935955105/"
             }
         }
     },
