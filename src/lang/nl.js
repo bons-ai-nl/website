@@ -81,5 +81,6 @@ export default {
     },
     "footer": {
         "email": "info@bons-ai.nl",
+        "followUs": "Volg ons"
     }
 };
