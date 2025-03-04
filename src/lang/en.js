@@ -58,11 +58,13 @@ export default {
         "facilitators": {
             "kamiel": {
                 "name": "Kamiel Verhelst",
-                "bio": "Developer with a passion for open source, Geo, and technology with societal impact. Technical Data Consultant at Geodan and Co-Founder of Watkanikdoen.nl. Combines technical expertise with a vision for creating meaningful technological solutions that serve society."
+                "bio": "Developer with a passion for open source, Geo, and technology with societal impact. Technical Data Consultant at Geodan and Co-Founder of Watkanikdoen.nl. Combines technical expertise with a vision for creating meaningful technological solutions that serve society.",
+                "linkedin": "https://www.linkedin.com/in/kamielverhelst/"
             },
             "sytze": {
                 "name": "Sytze Simonse",
-                "bio": "An experienced technical educator who has taught at various levels, from university courses in Remote Sensing & Machine Learning to high school Computer Science. With a background in Geo-Information Sciences and experience in digital transformation, Sytze excels at making complex technical concepts accessible and actionable."
+                "bio": "An experienced technical educator who has taught at various levels, from university courses in Remote Sensing & Machine Learning to high school Computer Science. With a background in Geo-Information Sciences and experience in digital transformation, Sytze excels at making complex technical concepts accessible and actionable.",
+                "linkedin": "https://www.linkedin.com/in/sytze-simonse/"
             }
         }
     },
