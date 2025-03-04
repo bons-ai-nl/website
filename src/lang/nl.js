@@ -112,17 +112,6 @@ export default {
             "Geïnteresseerd zijn in het opbouwen van een peer learning netwerk"
         ]
     },
-    "facilitators": {
-        "title": "Ontmoet je facilitators",
-        "sytze": {
-            "name": "Sytze Simonse",
-            "bio": "Sytze heeft ervaring in het bedrijfsleven in zowel technische als business-rollen met een achtergrond in het (IT-)onderwijs. Hij weet hoe je organisaties kunt begeleiden bij technologische verandering."
-        },
-        "kamiel": {
-            "name": "Kamiel Verhelst",
-            "bio": "Kamiel is softwareontwikkelaar, gespecialiseerd in GIS en Web development. Met zijn achtergrond in zowel sociale wetenschap als computer science is hij geinteresseerd in hoe technologie en maatschappij elkaar beïnvloeden."
-        }
-    },
     "achievements": {
         "title": "Wat je zal bereiken",
         "opportunities": {
