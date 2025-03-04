@@ -9,12 +9,12 @@ export default {
         "contact-us": "Get in touch"
     },
     "mission": {
-        "title": "The Why",
+        "title": "The why",
         "mainText": "AI is changing our world at an unprecedented pace. As an organization, you want to move along, but not at the expense of your values and vision. Big-tech suggests that their way is the only way - but there are strong alternatives and we believe it can be different. Bonsai helps you implement AI solutions while you remain in control. As an autonomous organization, you choose open solutions and take responsibility for the future of AI yourself.",
         "values": {
-            "title": "Our Values",
+            "title": "Our values",
             "openPrivate": {
-                "title": "Open but Private",
+                "title": "Open but private",
                 "description": "We champion transparency while protecting privacy"
             },
             "autonomous": {
@@ -28,35 +28,35 @@ export default {
         }
     },
     "approach": {
-        "title": "How We Work",
+        "title": "How we work",
         "labDescription": "Our Lab approach combines hands-on experience with collaborative learning",
         "modules": {
-            "title": "Learning Modules",
+            "title": "Learning modules",
             "selfHosting": {
-                "title": "Self-hosting AI Models",
+                "title": "Self-hosting AI models",
                 "description": "Take control of your AI infrastructure"
             },
             "promptTraining": {
-                "title": "Prompt Engineering",
+                "title": "Prompt engineering",
                 "description": "Master the art of effective AI communication"
             },
             "ethics": {
-                "title": "AI & Ethics",
+                "title": "AI & ethics",
                 "description": "Navigate the ethical implications of AI deployment"
             }
         }
     },
     "team": {
-        "title": "Who We Are",
+        "title": "Who we are",
         "description": "We're technologists with a heart for society, taking responsibility for shaping AI's future. Our expertise is matched only by our commitment to ethical innovation."
     },
     "approach": {
-        "title": "Our Approach",
+        "title": "Our approach",
         "description1": "The AI Learning Lab is an interactive session built on the principle of mutual learning. We believe that the best insights come from combining diverse perspectives and experiences.",
         "description2": "Together, we explore how AI can be thoughtfully integrated into your organization while considering broader societal impacts and ethical implications."
     },
     "workshop": {
-        "title": "Workshop Details",
+        "title": "Workshop details",
         "format": {
             "title": "Format",
             "items": [
@@ -77,7 +77,7 @@ export default {
         }
     },
     "journey": {
-        "title": "Learning Journey",
+        "title": "Learning journey",
         "before": {
             "title": "Before",
             "description": "Pre-workshop assessment and preparation materials to identify your current AI challenges and opportunities."
@@ -92,7 +92,7 @@ export default {
         }
     },
     "whoShouldJoin": {
-        "title": "Who Should Join?",
+        "title": "Who should join?",
         "intro": "This workshop is ideal for professionals who:",
         "items": [
             "Lead or manage teams",
@@ -103,7 +103,7 @@ export default {
         ]
     },
     "facilitators": {
-        "title": "Meet Your Facilitators",
+        "title": "Meet your facilitators",
         "sytze": {
             "name": "Sytze Simonse",
             "bio": "An experienced technical educator who has taught at various levels, from university courses in Remote Sensing & Machine Learning to high school Computer Science. With a background in Geo-Information Sciences and experience in digital transformation, Sytze excels at making complex technical concepts accessible and actionable."
@@ -114,28 +114,28 @@ export default {
         }
     },
     "achievements": {
-        "title": "What You'll Achieve",
+        "title": "What you'll achieve",
         "opportunities": {
-            "title": "Finding Opportunities",
+            "title": "Finding opportunities",
             "description": "Learn to identify and evaluate AI opportunities specific to your organization's context and challenges."
         },
         "implementation": {
-            "title": "Making It Happen",
+            "title": "Making it happen",
             "description": "Develop practical strategies for implementing AI solutions while managing risks and resources effectively."
         },
         "people": {
-            "title": "Bringing People Along",
+            "title": "Bringing people along",
             "description": "Build skills to lead change and foster adoption of AI initiatives within your team and organization."
         }
     },
     "cta": {
-        "title": "Join Our Next Session",
+        "title": "Join our next session",
         "timing": "First sessions starting from the third week of February 2025",
         "limit": "Limited to 12 participants per session",
         "button": "Show Interest"
     },
     "contact": {
-        "title": "Contact Us",
+        "title": "Contact us",
         "name": "Name",
         "email": "Email",
         "message": "Message",
