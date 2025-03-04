@@ -116,11 +116,11 @@ export default {
         "title": "Ontmoet je facilitators",
         "sytze": {
             "name": "Sytze Simonse",
-            "bio": "Een ervaren technische docent die op verschillende niveaus heeft lesgegeven, van universitaire cursussen in Remote Sensing & Machine Learning tot middelbare school Informatica. Met een achtergrond in Geo-Information Sciences en ervaring in digitale transformatie, blinkt Sytze uit in het toegankelijk en uitvoerbaar maken van complexe technische concepten."
+            "bio": "Sytze heeft ervaring in het bedrijfsleven in zowel technische als business-rollen met een achtergrond in het (IT-)onderwijs. Hij weet hoe je organisaties kunt begeleiden bij technologische verandering."
         },
         "kamiel": {
             "name": "Kamiel Verhelst",
-            "bio": "Ontwikkelaar met een passie voor open source, Geo en technologie met maatschappelijke impact. Technisch Data Consultant bij Geodan en mede-oprichter van Watkanikdoen.nl. Combineert technische expertise met een visie voor het creëren van betekenisvolle technologische oplossingen die de samenleving dienen."
+            "bio": "Kamiel is softwareontwikkelaar, gespecialiseerd in GIS en Web development. Met zijn achtergrond in zowel sociale wetenschap als computer science is hij geinteresseerd in hoe technologie en maatschappij elkaar beïnvloeden."
         }
     },
     "achievements": {
