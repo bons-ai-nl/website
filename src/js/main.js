@@ -225,4 +225,78 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Error submitting form.');
         }
     });
+
+    document.getElementById('contactForm').addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+
+        const formData = new FormData(ev.target);
+
+        // Adding all form data to an object
+        const formObject = {};
+        formData.forEach((value, key) => {
+            formObject[key] = value;
+        });
+
+        try {
+            const response = await fetch('https://api.formbee.dev/formbee/258ef555-8ce5-4cc9-b916-b357e6231add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formObject)
+            });
+
+            if (response.ok) {
+                document.getElementById('formSuccessMessage').classList.remove('hidden');
+                document.getElementById('formErrorMessage').classList.add('hidden');
+                // clear form
+                document.getElementById('contactForm').reset();
+            } else {
+                document.getElementById('formErrorMessage').classList.remove('hidden');
+                document.getElementById('formSuccessMessage').classList.add('hidden');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Error submitting form.');
+        }
+    });
+
+    // Set up LinkedIn links
+    document.addEventListener('DOMContentLoaded', () => {
+        function updateLinkedInLinks() {
+            // Set Kamiel's LinkedIn URL
+            const kamielLinkedIn = document.getElementById('kamiel-linkedin');
+            if (kamielLinkedIn) {
+                kamielLinkedIn.href = translations[currentLang].team.facilitators.kamiel.linkedin;
+            }
+            
+            // Set Sytze's LinkedIn URL
+            const sytzeLinkedIn = document.getElementById('sytze-linkedin');
+            if (sytzeLinkedIn) {
+                sytzeLinkedIn.href = translations[currentLang].team.facilitators.sytze.linkedin;
+            }
+        }
+        
+        // Initial update
+        updateLinkedInLinks();
+        
+        // Update links when language changes
+        const langButtons = document.querySelectorAll('.lang-btn');
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                setTimeout(updateLinkedInLinks, 100); // Small delay to ensure translations are updated first
+            });
+        });
+    });
+
+    // Smooth scrolling for anchor links    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });

@@ -11,7 +11,7 @@ export default {
     },
     "header": {
         "slogan": "AI, geworteld in waarden",
-        "title": "Ontdek de waarde van AI voor jouw organisatie",
+        "title": "Verken samen met ons wat verantwoorde AI kan betekenen voor jouw organisatie",
         "contact-us": "Neem contact met ons op"
     },
     "mission": {
@@ -21,15 +21,15 @@ export default {
             "title": "Onze waarden",
             "openPrivate": {
                 "title": "Open maar privé",
-                "description": "Wij pleiten voor transparantie terwijl we privacy beschermen"
+                "description": "We pleiten voor transparante en open technologie, én sterke privacy"
             },
             "autonomous": {
                 "title": "Autonomie",
-                "description": "Onafhankelijk denken leidt tot betere oplossingen"
+                "description": "We stimuleren het gebruik van open, onafhakelijke digitale technologie, zonder vendor lock-in"
             },
             "responsible": {
                 "title": "Verantwoordelijkheid",
-                "description": "We geven prioriteit aan ethische overwegingen bij elke beslissing"
+                "description": "We erkennen onze rol in een bredere context, en zijn realistisch over zowel de kansen als de risico's van AI, zowel ecologisch als sociaal"
             }
         }
     },

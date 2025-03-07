@@ -11,7 +11,7 @@ export default {
     },
     "header": {
         "slogan": "AI, rooted in values",
-        "title": "Discover the value of AI for your organization",
+        "title": "Explore with us what responsible AI can mean for your organization",
         "contact-us": "Get in touch",
     },
     "mission": {
@@ -21,15 +21,15 @@ export default {
             "title": "Our values",
             "openPrivate": {
                 "title": "Open but private",
-                "description": "We champion transparency while protecting privacy"
+                "description": "We advocate for both transparent and open technology ánd strong privacy"
             },
             "autonomous": {
                 "title": "Autonomy",
-                "description": "Independent thinking leads to better solutions"
+                "description": "We encourage the use of open, independent digital technology, without vendor lock-in"
             },
             "responsible": {
                 "title": "Responsibility",
-                "description": "We prioritize ethical considerations in every decision"
+                "description": "We acknowledge our role in a broader context, and are realistic about both the opportunities and risks of AI, both ecologically and socially"
             }
         }
     },
