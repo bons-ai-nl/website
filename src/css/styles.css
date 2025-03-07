@@ -76,7 +76,8 @@
     --background-color-2: #FFE4D0;
     --primary-color: #2D3047;
     --secondary-color: #3E9B85;
-    --accent-color: #FD958A;
+    --accent-color-1: #FD958A;
+    --accent-color-1-dark: #d66855;
     --accent-color-2: #9bd0ff;
     --hover-color: #242424;
     --footer-bg: #141414;
@@ -219,7 +220,7 @@ ul {
 }
 
 .language-switcher .lang-btn.active {
-    color: var(--accent-color);
+    color: var(--accent-color-1-dark);
     font-weight: 600;
 }
 
