@@ -227,3 +227,7 @@ ul {
 .language-switcher .lang-btn:hover {
     color: var(--secondary-color);
 }
+
+.svg-white-filter {
+    filter: brightness(0) invert(1);
+}
