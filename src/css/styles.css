@@ -71,13 +71,13 @@
 }
 
 :root {
-    --background-color: #FFE9D3;
+    --background-color: #FFF5EB;
     --text-color: #242424;
-    --background-color-2: #FBCFAF;
+    --background-color-2: #FFE4D0;
     --primary-color: #2D3047;
-    --secondary-color: #048A81;
-    --accent-color: #FF3864;
-    --accent-color-2: #d780ff;
+    --secondary-color: #3E9B85;
+    --accent-color: #FD958A;
+    --accent-color-2: #9bd0ff;
     --hover-color: #242424;
     --footer-bg: #141414;
 }

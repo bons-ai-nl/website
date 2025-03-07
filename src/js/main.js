@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Create initial elements (paths and rects)
         const initialElements = svgElementsCollection[0];
-        console.log(initialElements);
         
         initialElements.forEach(elementData => {
             let element;
