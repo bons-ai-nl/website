@@ -3,10 +3,16 @@ export default {
         "title": "Bonsai | AI, rooted in values",
         "name": "Bonsai",
     },
+    "nav": {
+        "why": "Why?",
+        "approach": "Our approach",
+        "who": "Who we are",
+        "contact": "Contact"
+    },
     "header": {
         "slogan": "AI, rooted in values",
         "title": "Discover the value of AI for your organization",
-        "contact-us": "Get in touch"
+        "contact-us": "Get in touch",
     },
     "mission": {
         "title": "The why",

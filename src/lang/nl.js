@@ -3,6 +3,12 @@ export default {
         "title": "Bonsai | AI, geworteld in waarden",
         "name": "Bonsai",
     },
+    "nav": {
+        "why": "Waarom?",
+        "approach": "Onze aanpak",
+        "who": "Wie we zijn",
+        "contact": "Contact"
+    },
     "header": {
         "slogan": "AI, geworteld in waarden",
         "title": "Ontdek de waarde van AI voor jouw organisatie",
