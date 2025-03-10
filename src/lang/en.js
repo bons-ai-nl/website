@@ -35,26 +35,35 @@ export default {
     },
     "approach": {
         "title": "How we work",
-        "labDescription": "Our Lab approach combines hands-on experience with collaborative learning",
+        "labDescription": "At Bonsai, we work according to an interactive 'Lab' format where experimentation, discovery, and co-creation are central. In a world where AI technology evolves daily, we stay continuously updated with the latest developments so you can focus on what really matters: creating value.",
         "keyPoints": {
-            "title": "Our approach",
-            "point1": "<strong>We start with your organization's values and vision</strong> - ensuring AI solutions align with your core principles",
-            "point2": "<strong>We focus on practical, hands-on learning</strong> - that empowers your team to maintain autonomy",
-            "point3": "<strong>We build sustainable solutions</strong> - that grow with your organization's needs and capabilities"
+            "title": "In our labs:",
+            "point1": "<strong>We focus on mutual learning</strong> — We bring technical expertise, you bring domain knowledge. Through this cross-pollination, the most suitable AI applications emerge for your specific context.",
+            "point2": "<strong>We make room for experiments</strong> — We test ideas in small steps so we can quickly see what works and what doesn't. This reduces risks and ensures solutions that fit your practice.",
+            "point3": "<strong>We offer ongoing involvement</strong> — After the Lab, we remain engaged. We check in to see if the knowledge gained and ideas developed lead to valuable implementations."
         },
         "modules": {
             "title": "Learning modules",
+            "learningGoals": "Learning goals",
             "selfHosting": {
                 "title": "Self-hosting AI models",
-                "description": "Take control of your AI infrastructure"
+                "description": "As an organization, you don't want to be dependent on big tech. Expensive licenses and vendor lock-in make it difficult to change course later. Fortunately, there are alternatives that are just as good and often better than the established names. Open-source AI applications offer the same possibilities, but with the preservation of your autonomy.",
+                "learningGoal1": "Running AI solutions 'locally'",
+                "learningGoal2": "What open-source alternatives exist for popular AI tools",
+                "learningGoal3": "The advantages and disadvantages of different hosting options"
             },
             "promptTraining": {
                 "title": "Prompt engineering",
-                "description": "Master the art of effective AI communication"
+                "description": "Effectively communicating with AI systems has become a crucial skill. Prompting - formulating your intentions - determines the quality of your results. Whether you're creating content, analyzing data, or generating images, the right prompt makes the difference between usable output and junk.",
+                "learningGoal1": "Learn the basic principles of effective prompting",
+                "learningGoal2": "Practice writing and refining prompts"
             },
             "ethics": {
                 "title": "AI & ethics",
-                "description": "Navigate the ethical implications of AI deployment"
+                "description": "The integration of AI into organizations brings new moral questions. This module translates major ethical themes into practical dilemmas that your organization will face.",
+                "learningGoal1": "Privacy & surveillance: Where is the line between efficiency and privacy?",
+                "learningGoal2": "Bias and discrimination: How do you prevent AI from reinforcing existing prejudices?",
+                "learningGoal3": "Human control: When do you let AI make decisions independently?"
             }
         }
     },
