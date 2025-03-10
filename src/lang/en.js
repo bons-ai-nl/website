@@ -38,9 +38,9 @@ export default {
         "labDescription": "Our Lab approach combines hands-on experience with collaborative learning",
         "keyPoints": {
             "title": "Our approach",
-            "point1": "We start with your organization's values and vision, ensuring AI solutions align with your core principles",
-            "point2": "We focus on practical, hands-on learning that empowers your team to maintain autonomy",
-            "point3": "We build sustainable solutions that grow with your organization's needs and capabilities"
+            "point1": "<strong>We start with your organization's values and vision</strong> - ensuring AI solutions align with your core principles",
+            "point2": "<strong>We focus on practical, hands-on learning</strong> - that empowers your team to maintain autonomy",
+            "point3": "<strong>We build sustainable solutions</strong> - that grow with your organization's needs and capabilities"
         },
         "modules": {
             "title": "Learning modules",

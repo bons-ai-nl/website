@@ -38,9 +38,9 @@ export default {
         "labDescription": "We werken volgens het \"Lab\"-format, waarin we een wederzijds leren. Er bestaat geen 'one-size-fits-all'-oplossing. Met een gestructureerde aanpak verkennen we samen de kansen en uitdagingen op gebied van AI binnen jouw organisatie.",
         "keyPoints": {
             "title": "In onze labs:",
-            "point1": "Staat wederzijds leren centraal — Wij brengen technische expertise, jij brengt domeinkennis. Door deze kruisbestuiving ontstaan de meest passende AI-toepassingen voor jouw specifieke context.",
-            "point2": "Maken we ruimte voor experimenten — We testen ideeën in kleine stappen zodat we snel kunnen zien wat wel en niet werkt. Dit vermindert risico's en zorgt voor oplossingen die aansluiten bij jouw praktijk.",
-            "point3": "Bieden we blijvende betrokkenheid — Na het Lab blijven we graag betrokken. We checken in om te zien of om te zien of de opgedane kennis en ideeën leiden tot waardevolle implementaties."
+            "point1": "<strong>Staat wederzijds leren centraal</strong> — Wij brengen technische expertise, jij brengt domeinkennis. Door deze kruisbestuiving ontstaan de meest passende AI-toepassingen voor jouw specifieke context.",
+            "point2": "<strong>Maken we ruimte voor experimenten</strong> — We testen ideeën in kleine stappen zodat we snel kunnen zien wat wel en niet werkt. Dit vermindert risico's en zorgt voor oplossingen die aansluiten bij jouw praktijk.",
+            "point3": "<strong>Bieden we blijvende betrokkenheid</strong> — Na het Lab blijven we graag betrokken. We checken in om te zien of om te zien of de opgedane kennis en ideeën leiden tot waardevolle implementaties."
         },
         "modules": {
             "title": "Modules",
