@@ -49,6 +49,27 @@ function updateContent() {
             console.error(`Error setting translation for key: ${key}`, error);
         }
     });
+
+    // Handle HTML content translations
+    document.querySelectorAll('[data-i18n-html]').forEach(element => {
+        const key = element.getAttribute('data-i18n-html');
+        const keys = key.split('.');
+        let value = translations[currentLang];
+       
+        try {
+            for (const k of keys) {
+                value = value[k];
+            }
+           
+            if (value === undefined) {
+                console.warn(`Translation missing for HTML key: ${key} in language: ${currentLang}`);
+                return;
+            }
+            element.innerHTML = value;
+        } catch (error) {
+            console.error(`Error setting HTML translation for key: ${key}`, error);
+        }
+    });
     
     // Handle href attributes
     document.querySelectorAll('[data-i18n-href]').forEach(element => {

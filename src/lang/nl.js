@@ -35,7 +35,7 @@ export default {
     },
     "approach": {
         "title": "Aanpak",
-        "labDescription": "We werken volgens het \"Lab\"-format, waarin we een wederzijds leren. Er bestaat geen 'one-size-fits-all'-oplossing. Met een gestructureerde aanpak verkennen we samen de kansen en uitdagingen op gebied van AI binnen jouw organisatie.",
+        "labDescription": "Bij Bonsai werken we volgens een interactief 'Lab'-format waar experimenteren, ontdekken en co-creatie centraal staan. In een wereld waarin AI-technologie dagelijks evolueert, blijven wij continu bij met de laatste ontwikkelingen zodat jij je kunt richten op wat écht belangrijk is: waarde creëren.",
         "keyPoints": {
             "title": "In onze labs:",
             "point1": "<strong>Staat wederzijds leren centraal</strong> — Wij brengen technische expertise, jij brengt domeinkennis. Door deze kruisbestuiving ontstaan de meest passende AI-toepassingen voor jouw specifieke context.",
