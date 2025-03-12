@@ -75,13 +75,13 @@
             <!-- Mobile menu -->
             <div x-show="isOpen" class="lg:hidden">
                 <div class="flex flex-col px-2 pt-2 pb-3 space-y-1">
-                    <a href="#why" data-i18n="nav.why"
+                    <a href="#why" data-i18n="nav.why" @click="isOpen = !isOpen"
                             class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700">Why</a>
-                    <a href="#approach" data-i18n="nav.approach"
+                    <a href="#approach" data-i18n="nav.approach" @click="isOpen = !isOpen"
                         class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700">Approach</a>
-                    <a href="#who" data-i18n="nav.who"
+                    <a href="#who" data-i18n="nav.who" @click="isOpen = !isOpen"
                         class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700">Who</a>
-                    <a href="#contact"
+                    <a href="#contact" @click="isOpen = !isOpen"
                         class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700">Contact</a>
                 </div>
             </div>
