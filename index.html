@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="meta.title">Bonsai | AI, geworteld in waarden</title>
+    <title data-i18n="meta.title">Bonsai | AI, geworteld in waarden</title>
     <!-- icon -->
     <link rel="icon" href="/assets/favicon-R9bEz1ad.ico" type="image/x-icon">
     
@@ -20,8 +20,8 @@
     <meta name="twitter:title" content="Bonsai | AI, geworteld in waarden">
     <meta name="twitter:description" content="Bonsai - AI, geworteld in waarden. AI verandert onze wereld in een ongekend tempo. Als organisatie wil je meebewegen, maar niet ten koste van je waarden en visie. Big-tech suggereert dat hun weg de enige weg is - maar er zijn sterke alternatieven en wij weten dat het anders kan. Bonsai helpt je bij het implementeren van AI-oplossingen waarbij jij aan het roer blijft. Als autonome organisatie kies je voor open oplossingen en neem je zelf verantwoordelijkheid voor de toekomst van AI.">
     <meta name="twitter:image" content="/assets/bonsai_logo-mriBa5w8.png">
-  <script type="module" crossorigin src="/assets/index-Di7wx2xU.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-KwxmpNpW.css">
+  <script type="module" crossorigin src="/assets/index-Dkzb7ZoP.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Db1H_95q.css">
 </head>
 
 <body class="gradient-bg min-h-screen">
@@ -75,13 +75,13 @@
             <!-- Mobile menu -->
             <div x-show="isOpen" class="lg:hidden">
                 <div class="flex flex-col px-2 pt-2 pb-3 space-y-1">
-                    <a href="#why" data-i18n="nav.why"
+                    <a href="#why" data-i18n="nav.why" @click="isOpen = !isOpen"
                             class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700">Why</a>
-                    <a href="#approach" data-i18n="nav.approach"
+                    <a href="#approach" data-i18n="nav.approach" @click="isOpen = !isOpen"
                         class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700">Approach</a>
-                    <a href="#who" data-i18n="nav.who"
+                    <a href="#who" data-i18n="nav.who" @click="isOpen = !isOpen"
                         class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700">Who</a>
-                    <a href="#contact"
+                    <a href="#contact" @click="isOpen = !isOpen"
                         class="px-3 py-2 rounded-md text-sm border-transparent border font-medium hover:border-gray-700">Contact</a>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                             <h1 class="font-bold mb-4 text-left text-5xl md:text-6xl" data-i18n="header.slogan"></h1>
                             <p class="text-2xl md:text-3xl text-gray-700" data-i18n="header.title"></p>
                         </div>
-                        <div class="flex justify-center md:justify-start">
+                        <div class="flex justify-center mt-12 md:mt-5 lg:mt-0 md:justify-start">
                             <a href="#contact">
                                 <button
                                     class="w-full bg-[var(--accent-color-1-dark)] text-white px-6 py-4 rounded-lg hover:bg-[var(--secondary-color)] transition-colors font-medium text-lg"
@@ -147,7 +147,17 @@
         <div id="approach" class="w-full mb-16">
             <div class="bg-[var(--background-color-2)] p-8 md:p-16 rounded-3xl">
                 <h2 class="text-3xl font-bold mb-6 section-title" data-i18n="approach.title"></h2>
-                <p class="text-xl mb-12" data-i18n="approach.labDescription"></p>
+                <p class="text-xl mb-8" data-i18n="approach.labDescription"></p>
+                
+                <!-- Key Approach Points -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold mb-6" data-i18n="approach.keyPoints.title"></h3>
+                    <ul class="list-disc pl-6 space-y-4 text-lg">
+                        <li data-i18n-html="approach.keyPoints.point1"></li>
+                        <li data-i18n-html="approach.keyPoints.point2"></li>
+                        <li data-i18n-html="approach.keyPoints.point3"></li>
+                    </ul>
+                </div>
 
                 <h3 class="text-2xl font-bold mb-6" data-i18n="approach.modules.title"></h3>
                 <div class="grid lg:grid-cols-3 gap-8">
