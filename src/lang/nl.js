@@ -78,7 +78,7 @@ export default {
             },
             "sytze": {
                 "name": "Sytze Simonse",
-                "bio": "Sytze heeft ervaring in het bedrijfsleven in zowel technische als business-rollen met een achtergrond in het (IT-)onderwijs. Hij weet hoe je organisaties kunt begeleiden bij technologische verandering.",
+                "bio": "Sytze heeft ervaring in het bedrijfsleven in zowel technische als business-rollen met een achtergrond in het (IT-)onderwijs. Hij weet hoe je organisaties kunt begeleiden bij digitale verandering.",
                 "linkedin": "https://www.linkedin.com/in/sytze-simonse-935955105/"
             }
         }

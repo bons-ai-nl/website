@@ -78,7 +78,7 @@ export default {
             },
             "sytze": {
                 "name": "Sytze Simonse",
-                "bio": "An experienced technical educator who has taught at various levels, from university courses in Remote Sensing & Machine Learning to high school Computer Science. With a background in Geo-Information Sciences and experience in digital transformation, Sytze excels at making complex technical concepts accessible and actionable.",
+                "bio": "Sytze has experience in business in both technical and business roles with a background in (IT) education. He knows how to guide organizations through digital change.",
                 "linkedin": "https://www.linkedin.com/in/sytze-simonse/"
             }
         }
