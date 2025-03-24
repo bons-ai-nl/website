@@ -18,10 +18,10 @@ export default {
         "title": "Het waarom",
         "mainText": "AI verandert onze wereld in een ongekend tempo. Als organisatie wil je meebewegen, maar niet ten koste van je waarden en visie. Big-tech suggereert dat hun weg de enige weg is - maar er zijn sterke alternatieven en wij weten dat het anders kan. Bonsai helpt je bij het implementeren van AI-oplossingen waarbij jij aan het roer blijft. Als autonome organisatie kies je voor open oplossingen en neem je zelf verantwoordelijkheid voor de toekomst van AI.",
         "values": {
-            "title": "Onze waarden",
+            "title": "Waar we voor staan",
             "openPrivate": {
-                "title": "Open maar privé",
-                "description": "We pleiten voor transparante en open technologie, én sterke privacy"
+                "title": "Open en privé",
+                "description": "We pleiten voor open technologie, én sterke privacy"
             },
             "autonomous": {
                 "title": "Autonomie",
