@@ -1,7 +1,7 @@
 export default {
     "meta": {
-        "title": "Enoki | AI, verbonden in waarden",
-        "name": "Enoki",
+        "title": "Enoki | AI, geworteld in waarden",
+        "name": "enoki",
     },
     "nav": {
         "why": "Waarom?",
@@ -10,7 +10,7 @@ export default {
         "contact": "Contact"
     },
     "header": {
-        "slogan": "AI, verbonden in waarden",
+        "slogan": "AI, geworteld in waarden",
         "title": "Verken samen met ons wat verantwoorde AI kan betekenen voor jouw organisatie",
         "contact-us": "Neem contact met ons op"
     },
