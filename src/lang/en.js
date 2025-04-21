@@ -1,7 +1,7 @@
 export default {
     "meta": {
-        "title": "Bonsai | AI, rooted in values",
-        "name": "Bonsai",
+        "title": "Enoki | AI, rooted in values",
+        "name": "Enoki",
     },
     "nav": {
         "why": "Why?",
@@ -16,7 +16,7 @@ export default {
     },
     "mission": {
         "title": "The why",
-        "mainText": "AI is changing our world at an unprecedented pace. As an organization, you want to move along, but not at the expense of your values and vision. Big-tech suggests that their way is the only way - but there are strong alternatives and we believe it can be different. Bonsai helps you implement AI solutions while you remain in control. As an autonomous organization, you choose open solutions and take responsibility for the future of AI yourself.",
+        "mainText": "AI is changing our world at an unprecedented pace. As an organization, you want to move along, but not at the expense of your values and vision. Big-tech suggests that their way is the only way - but there are strong alternatives and we believe it can be different. Enoki helps you implement AI solutions while you remain in control. As an autonomous organization, you choose open solutions and take responsibility for the future of AI yourself.",
         "values": {
             "title": "What we stand for",
             "openPrivate": {
@@ -35,7 +35,7 @@ export default {
     },
     "approach": {
         "title": "How we work",
-        "labDescription": "At Bonsai, we work according to an interactive 'Lab' format where experimentation, discovery, and co-creation are central. In a world where AI technology evolves daily, we stay continuously updated with the latest developments so you can focus on what really matters: creating value.",
+        "labDescription": "At Enoki, we work according to an interactive 'Lab' format where experimentation, discovery, and co-creation are central. In a world where AI technology evolves daily, we stay continuously updated with the latest developments so you can focus on what really matters: creating value.",
         "keyPoints": {
             "title": "In our labs:",
             "point1": "<strong>We focus on mutual learning</strong> — We bring technical expertise, you bring domain knowledge. Through this cross-pollination, the most suitable AI applications emerge for your specific context.",
