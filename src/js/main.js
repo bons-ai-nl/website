@@ -12,8 +12,6 @@ Alpine.start()
 import enTranslations from '../lang/en.js'
 import nlTranslations from '../lang/nl.js'
 
-// Import SVG morphing utilities
-import { svgElementsCollection, viewBox, width, height } from './svgMorpher.js'
 
 const translations = {
     en: enTranslations,
@@ -100,81 +98,6 @@ let currentBonsaiIndex = 0;
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize content
     updateContent();
-    
-    // Initialize bonsai SVG morphing
-    const bonsaiContainer = document.getElementById('bonsai-container');
-    
-    if (bonsaiContainer) {
-        // Create SVG element
-        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg.setAttribute('viewBox', viewBox || '0 0 400 400');
-        svg.setAttribute('width', width);
-        svg.setAttribute('height', height);
-        svg.classList.add('bonsai-svg');
-        
-        // Create initial elements (paths and rects)
-        const initialElements = svgElementsCollection[0];
-        
-        initialElements.forEach(elementData => {
-            let element;
-            
-            if (elementData.type === 'path') {
-                element = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                element.setAttribute('d', elementData.d);
-            } else if (elementData.type === 'rect') {
-                element = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-                element.setAttribute('x', elementData.x);
-                element.setAttribute('y', elementData.y);
-                element.setAttribute('width', elementData.width);
-                element.setAttribute('height', elementData.height);
-                element.setAttribute('rx', elementData.rx || '0');
-            }
-            
-            // Set common attributes
-            element.setAttribute('fill', elementData.fill || 'none');
-            if (elementData.stroke) element.setAttribute('stroke', elementData.stroke);
-            if (elementData.strokeWidth) element.setAttribute('stroke-width', elementData.strokeWidth);
-            if (elementData.id) element.id = elementData.id;
-            
-            element.classList.add('morphing-element', 'transition-ease-07');
-            svg.appendChild(element);
-        });
-        
-        // Add SVG to container
-        bonsaiContainer.appendChild(svg);
-        
-        // Set up morphing interval
-        setInterval(() => {
-            // Get next bonsai index
-            currentBonsaiIndex = (currentBonsaiIndex + 1) % svgElementsCollection.length;
-            
-            // Get elements for next bonsai
-            const nextElements = svgElementsCollection[currentBonsaiIndex];
-            
-            // Update all elements
-            const currentElements = svg.querySelectorAll('path, rect');
-            currentElements.forEach((element, index) => {
-                if (nextElements[index]) {
-                    const nextElement = nextElements[index];
-                    
-                    // Update specific attributes based on element type
-                    if (element.tagName.toLowerCase() === 'path' && nextElement.type === 'path') {
-                        element.setAttribute('d', nextElement.d);
-                    } else if (element.tagName.toLowerCase() === 'rect' && nextElement.type === 'rect') {
-                        element.setAttribute('x', nextElement.x);
-                        element.setAttribute('y', nextElement.y);
-                        element.setAttribute('width', nextElement.width);
-                        element.setAttribute('height', nextElement.height);
-                    }
-                    
-                    // Update common attributes
-                    if (nextElement.fill) element.setAttribute('fill', nextElement.fill);
-                    if (nextElement.stroke) element.setAttribute('stroke', nextElement.stroke);
-                    if (nextElement.strokeWidth) element.setAttribute('stroke-width', nextElement.strokeWidth);
-                }
-            });
-        }, 2000);
-    }
     
     // Enable navbar toggler
     const navbarToggler = document.querySelector('.navbar-toggler');

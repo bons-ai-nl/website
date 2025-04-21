@@ -1,7 +1,7 @@
 export default {
     "meta": {
-        "title": "Bonsai | AI, geworteld in waarden",
-        "name": "Bonsai",
+        "title": "Enoki | AI, geworteld in waarden",
+        "name": "enoki",
     },
     "nav": {
         "why": "Waarom?",
@@ -16,7 +16,7 @@ export default {
     },
     "mission": {
         "title": "Het waarom",
-        "mainText": "AI verandert onze wereld in een ongekend tempo. Als organisatie wil je meebewegen, maar niet ten koste van je waarden en visie. Big-tech suggereert dat hun weg de enige weg is - maar er zijn sterke alternatieven en wij weten dat het anders kan. Bonsai helpt je bij het implementeren van AI-oplossingen waarbij jij aan het roer blijft. Als autonome organisatie kies je voor open oplossingen en neem je zelf verantwoordelijkheid voor de toekomst van AI.",
+        "mainText": "AI verandert onze wereld in een ongekend tempo. Als organisatie wil je meebewegen, maar niet ten koste van je waarden en visie. Big-tech suggereert dat hun weg de enige weg is - maar er zijn sterke alternatieven en wij weten dat het anders kan. Enoki helpt je bij het implementeren van AI-oplossingen waarbij jij aan het roer blijft. Als autonome organisatie kies je voor open oplossingen en neem je zelf verantwoordelijkheid voor de toekomst van AI.",
         "values": {
             "title": "Waar we voor staan",
             "openPrivate": {
@@ -35,7 +35,7 @@ export default {
     },
     "approach": {
         "title": "Aanpak",
-        "labDescription": "Bij Bonsai werken we volgens een interactief 'Lab'-format waar experimenteren, ontdekken en co-creatie centraal staan. In een wereld waarin AI-technologie dagelijks evolueert, blijven wij continu bij met de laatste ontwikkelingen zodat jij je kunt richten op wat écht belangrijk is: waarde creëren.",
+        "labDescription": "Bij Enoki werken we volgens een interactief 'Lab'-format waar experimenteren, ontdekken en co-creatie centraal staan. In een wereld waarin AI-technologie dagelijks evolueert, blijven wij continu bij met de laatste ontwikkelingen zodat jij je kunt richten op wat écht belangrijk is: waarde creëren.",
         "keyPoints": {
             "title": "In onze labs:",
             "point1": "<strong>Staat wederzijds leren centraal</strong> — Wij brengen technische expertise, jij brengt domeinkennis. Door deze kruisbestuiving ontstaan de meest passende AI-toepassingen voor jouw specifieke context.",

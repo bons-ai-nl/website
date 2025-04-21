@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 
 /* Import Tailwind */
 @tailwind base;
@@ -71,16 +71,18 @@
 }
 
 :root {
-    --background-color: #FFF5EB;
-    --text-color: #242424;
-    --background-color-2: #FFE4D0;
-    --primary-color: #2D3047;
-    --secondary-color: #3E9B85;
-    --accent-color-1: #FD958A;
-    --accent-color-1-dark: #d66855;
-    --accent-color-2: #9bd0ff;
-    --hover-color: #242424;
-    --footer-bg: #141414;
+    /* New Enoki Color Palette */
+    --background-color: #F9F6EE;    /* Ivory/cream for backgrounds */
+    --text-color: #2F4F4F;          /* Forest green for text */
+    --background-color-2: #F1EDE4;  /* Lighter ivory for secondary backgrounds */
+    --primary-color: #2F4F4F;       /* Forest green for primary elements */
+    --secondary-color: #26A69A;     /* Teal carried over from current branding */
+    --accent-color-1: #D2B48C;      /* Earthy tan for mushroom stems */
+    --accent-color-1-dark: #B89B76; /* Darker tan */
+    --accent-color-2: #5D4037;      /* Deep brown for grounding elements */
+    --accent-color-3: #DAA520;      /* Subtle gold for highlights */
+    --hover-color: #5D4037;         /* Deep brown for hover states */
+    --footer-bg: #2F4F4F;           /* Forest green for footer */
 }
 
 body {
@@ -104,13 +106,13 @@ body {
 }
 
 .root-background path {
-    fill: var(--primary-color);
+    fill: var(--accent-color-1);
     opacity: 0.1;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Young Serif', 'Ubuntu', 'Space Grotesk', sans-serif;
-    font-weight: 800;
+    font-family: 'Francis One', 'Outfit', 'Space Grotesk', sans-serif;
+    font-weight: 600;
 }
 
 h1 {
@@ -151,7 +153,7 @@ ul {
 }
 
 .navbar {
-    border-bottom: 1px solid rgba(142, 202, 230, 0.1);
+    border-bottom: 1px solid rgba(210, 180, 140, 0.2);
 }
 
 .logo-container {
@@ -160,7 +162,8 @@ ul {
 
 .footer {
     background-color: var(--footer-bg);
-    border-top: 1px solid rgba(142, 202, 230, 0.1);
+    border-top: 1px solid rgba(210, 180, 140, 0.2);
+    color: var(--background-color);
 }
 
 .section-title {
@@ -178,7 +181,7 @@ ul {
                 x 0.7s ease, y 0.7s ease, width 0.7s ease, height 0.7s ease;
 }
 
-.bonsai-svg {
+.enoki-svg {
     width: 100%;
     height: auto;
     max-height: 400px;
@@ -191,9 +194,10 @@ ul {
     left: 0;
     width: 60%;
     height: 3px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 2px;
 }
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -206,13 +210,16 @@ ul {
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    box-shadow: 0 4px 6px rgba(33, 158, 188, 0.3);
+    background-color: var(--accent-color-1);
+    color: var(--text-color);
+    box-shadow: 0 4px 6px rgba(210, 180, 140, 0.3);
     transition: all 0.3s ease;
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(33, 158, 188, 0.4);
+    background-color: var(--accent-color-1-dark);
+    box-shadow: 0 6px 8px rgba(210, 180, 140, 0.4);
 }
 
 .language-switcher .lang-btn {
@@ -220,12 +227,12 @@ ul {
 }
 
 .language-switcher .lang-btn.active {
-    color: var(--accent-color-1-dark);
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
 .language-switcher .lang-btn:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color-3);
 }
 
 .svg-white-filter {
