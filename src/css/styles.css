@@ -111,7 +111,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Francis One', 'Outfit', 'Space Grotesk', sans-serif;
+    font-family: 'Francois One', 'Outfit', 'Space Grotesk', sans-serif;
     font-weight: 600;
 }
 
@@ -119,6 +119,9 @@ h1 {
     @apply text-7xl;
 }
 
+.francois-one {
+    font-family: 'Francois One', sans-serif;
+}
 
 /* Override Bootstrap's default link colors */
 a {
@@ -130,9 +133,6 @@ a {
 a:hover {
     color: var(--hover-color);
     text-decoration: none;
-}
-
-nav {
 }
 
 /* Add bullet points styling */
