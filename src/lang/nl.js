@@ -90,10 +90,10 @@ export default {
         "message": "Bericht",
         "submit": "Verstuur bericht",
         "success": "Je bericht is succesvol verstuurd. U ontvangt binnenkort reactie van ons.",
-        "fail": "Er is iets misgegaan. Probeer het later opnieuw of stuur ons een email via info@bons-ai.nl."
+        "fail": "Er is iets misgegaan. Probeer het later opnieuw of stuur ons een email via info@enoki-ai.nl."
     },
     "footer": {
-        "email": "info@bons-ai.nl",
+        "email": "info@enoki-ai.nl",
         "followUs": "Volg ons"
     }
 };
